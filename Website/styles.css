@@ -13,13 +13,20 @@
   grid-gap: 15px;
   grid-template-columns: auto auto auto;
   padding: 10px;
+  align-items: center;
 }
 
 /* Allows individual changes to the grid */
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: #ff00ff;
+  border: #ff00ff;
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  color: #ffff;
+}
+
+button{
+  background-color: #ff00ff;
+  border: #ff00ff;
 }
