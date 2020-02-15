@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
-
+/* This allows changes made to the 'Browse by subject' title */
 .browse{
   text-align: center;
   color: #6495ED;
   font-family: 'Josefin Sans', sans-serif;
 }
 
-button{
+/* Allows chage the whole grid structure */
+.grid-container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
 
+/* Allows individual changes to the grid */
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
