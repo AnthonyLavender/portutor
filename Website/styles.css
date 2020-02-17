@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h2{
+
+}
 
 /* This allows changes made to the 'Browse by subject' title */
 .browse{
@@ -26,14 +33,14 @@
   text-align: center;
   color: #ffff;
 }
-
+/* Change the button layout  */
 button{
   background-color: #ff00ff;
   border: #ff00ff;
   cursor: pointer;
   transition:  all 0.3s ease 0s;
 }
-
+/* Changes the hove on the button */
 button:hover{
   background-color: #ff99ff
 }
