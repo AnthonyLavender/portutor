@@ -12,9 +12,9 @@
 .grid-container {
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 12em 12em 12em;
   padding: 10px;
-  align-items: center;
+  text-align: center;
 }
 
 /* Allows individual changes to the grid */
@@ -30,4 +30,10 @@
 button{
   background-color: #ff00ff;
   border: #ff00ff;
+  cursor: pointer;
+  transition:  all 0.3s ease 0s;
+}
+
+button:hover{
+  background-color: #ff99ff
 }
