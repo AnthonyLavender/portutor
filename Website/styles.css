@@ -35,6 +35,7 @@ button {
   border: #ff00ff;
   cursor: pointer;
   transition:  all 0.3s ease 0s;
+  border-radius: 0.5em;
 }
 /* Changes the hove on the button */
 button:hover{
