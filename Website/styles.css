@@ -53,7 +53,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+.send_button {
   background-color: #ff00ff;
   color: white;
   padding: 12px 20px;
@@ -63,7 +63,7 @@ input[type=submit] {
   transition:  all 0.3s ease 0s;
 }
 
-input[type=submit]:hover {
+.send_button:hover {
   background-color: #ff99ff;
 }
 
@@ -76,4 +76,19 @@ input[type=submit]:hover {
 
 .social-links-container{
   padding: 2em;
+}
+
+#sendPopUp{
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
 }
