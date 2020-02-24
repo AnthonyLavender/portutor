@@ -34,10 +34,10 @@
 .grid-container-signup{
   display: grid;
   grid-gap: 1em;
-  grid-template-columns: 20em 20em;
+  grid-template-columns: 18.5em 18.5em;
   padding: 10px;
   text-align: center;
-
+  border-radius: 0.5em;
 }
 /* Change the button layout  */
 button {
