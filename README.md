@@ -1,2 +1,2 @@
 # portutor
-This is out software Engineering coursework 
+This is our software Engineering coursework 
