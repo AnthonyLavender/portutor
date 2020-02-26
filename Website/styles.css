@@ -63,7 +63,8 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-.send_button {
+#send_button, #reset_button
+{
   background-color: #ff00ff;
   color: white;
   padding: 12px 20px;
@@ -73,7 +74,7 @@ input[type=text], select, textarea {
   transition:  all 0.3s ease 0s;
 }
 
-.send_button:hover {
+#send_button:hover, #reset_button:hover {
   background-color: #ff99ff;
 }
 
@@ -89,25 +90,39 @@ input[type=text], select, textarea {
   grid-gap: 0.1em;
   grid-template-columns: 4.7em 4.7em 4.7em 4.7em;
   padding: 2em;
-  cursor: pointer;
 }
 
-.social-links-item {
+.social-links-items {
   padding: 2em;
   cursor: pointer;
 }
 
-#sendPopUp{
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .show {
+  visibility: visible;
+
 }
