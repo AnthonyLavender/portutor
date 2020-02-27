@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5 {
 .listFlex {display: flex; justify-content: center;}
 
 img {
-  width: 100%;
+  width: 50%;
 }
 
 
@@ -23,7 +23,7 @@ ul {list-style-type: none;}
 .month {
   padding: 70px 25px;
   width: 100%;
-  background: #1abc9c;
+  background: #8B008B;
   text-align: center;
 }
 
@@ -52,13 +52,13 @@ ul {list-style-type: none;}
 .weekdays {
   margin: auto;
   padding: 10px 0;
-  background-color: #ddd;
+  background-color: #BA55D3;
 }
 
 .weekdays li {
   display: inline-block;
   width: 13.6%;
-  color: #666;
+  color: white;
   text-align: center;
 }
 
@@ -76,12 +76,6 @@ ul {list-style-type: none;}
   margin-bottom: 5px;
   font-size:12px;
   color: #777;
-}
-
-.days li .active {
-  padding: 5px;
-  background: #1abc9c;
-  color: white !important
 }
 
 /* Add media queries for smaller screens */
