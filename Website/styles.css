@@ -3,6 +3,10 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.para{
+  color: #fff;
+}
+
 .nav-container {
 	width: 80%;
 	margin: 0 auto;
@@ -74,9 +78,8 @@ nav a:hover::before {
 /* This allows changes made to the 'Browse by subject' title */
 .browse{
   text-align: center;
-  color: #6495ED;
+  color: #1ab188;
   font-family: 'Josefin Sans', sans-serif;
-  color: #ff00ff;
 }
 
 /* Allows chage the whole grid structure */
@@ -90,13 +93,13 @@ nav a:hover::before {
 
 /* Allows individual changes to the grid */
 .grid-item {
-  background-color: #ff00ff;
-  border: #ff00ff;
+  background-color: #13232f;
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  color: #ffff;
+  color: #1ab188;
   border-radius: 0.5em;
+  border: #c1bdba
 }
 /* Will change the signup grid container */
 .grid-container-signup{
@@ -109,15 +112,15 @@ nav a:hover::before {
 }
 /* Change the button layout  */
 button {
-  background-color: #ff00ff;
-  border: #ffffff;
+  background-color: #13232f;
+  border: #13232f;
   cursor: pointer;
   transition:  all 0.3s ease 0s;
   border-radius: 0.5em;
 }
 /* Changes the hove on the button */
 button:hover{
-  background-color: #ff99ff
+  background-color: #c1bdba
 }
 
 input[type=text], select, textarea {
@@ -133,7 +136,7 @@ input[type=text], select, textarea {
 
 #send_button, #reset_button
 {
-  background-color: #ff00ff;
+  background-color: #13232f;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -143,7 +146,7 @@ input[type=text], select, textarea {
 }
 
 #send_button:hover, #reset_button:hover {
-  background-color: #ff99ff;
+  background-color: #c1bdba;
 }
 
 .container {
@@ -199,11 +202,6 @@ input[type=text], select, textarea {
 /*Profile ---------------------------------------*/
 
 
-h1, h2, h3, h4, h5 {
-  border-bottom: 1px solid #ccc;
-  color: #3F51B5;
-  padding-bottom: 8px
-}
 .profileContainer {
   margin: auto;
   width: 500px;
