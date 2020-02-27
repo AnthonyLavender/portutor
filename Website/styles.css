@@ -74,7 +74,6 @@ nav a:hover::before {
   width: 100%;
 }
 
-
 /* This allows changes made to the 'Browse by subject' title */
 .browse{
   text-align: center;
@@ -89,6 +88,8 @@ nav a:hover::before {
   grid-template-columns: 12em 12em 12em;
   padding: 10px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Allows individual changes to the grid */
@@ -99,7 +100,7 @@ nav a:hover::before {
   text-align: center;
   color: #1ab188;
   border-radius: 0.5em;
-  border: #c1bdba
+  border: #c1bdba;
 }
 /* Will change the signup grid container */
 .grid-container-signup{
@@ -109,6 +110,8 @@ nav a:hover::before {
   padding: 10px;
   text-align: center;
   border-radius: 0.5em;
+  align-items: center;
+  justify-content: center;
 }
 /* Change the button layout  */
 button {
