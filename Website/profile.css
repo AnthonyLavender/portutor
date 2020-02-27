@@ -5,12 +5,12 @@ h1, h2, h3, h4, h5 {
   color: #3F51B5;
   padding-bottom: 8px
 }
-.container {
+.profileContainer {
   margin: auto;
   width: 500px;
   text-align: center;
 }
-.listFlex {display: flex; justify-content: center;}
+.profileListFlex {display: flex; justify-content: center;}
 
 img {
   width: 50%;
