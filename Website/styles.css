@@ -13,7 +13,7 @@
 }
 
 header {
-  background: #13232f;
+  background: #37556b;
 }
 
 header::after {
@@ -94,7 +94,7 @@ nav a:hover::before {
 
 /* Allows individual changes to the grid */
 .grid-item {
-  background-color: #13232f;
+  background-color: #37556b;
   padding: 20px;
   font-size: 30px;
   text-align: center;
@@ -200,7 +200,9 @@ input[type=text], select, textarea {
   visibility: visible;
 
 }
-
+html{
+    background-color: #13232f;
+}
 
 /*Profile ---------------------------------------*/
 
