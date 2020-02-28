@@ -120,6 +120,8 @@ button {
   cursor: pointer;
   transition:  all 0.3s ease 0s;
   border-radius: 0.5em;
+  color: #1ab188;
+  
 }
 /* Changes the hove on the button */
 button:hover{
@@ -275,6 +277,16 @@ html{
   margin-bottom: 5px;
   font-size:12px;
   color: #777;
+}
+
+.search-container{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50%;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 18.5em 18.5em;
 }
 
 /* Add media queries for smaller screens */
