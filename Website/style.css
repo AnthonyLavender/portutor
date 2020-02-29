@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
-*{
+
+*,h1,h2,h3,h4,h5,p,a,ul,li,div{
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.para{
+a {
+  text-decoration: none;
   color: #fff;
 }
 
-.nav-container {
-	width: 80%;
-	margin: 0 auto;
+.para {
+  color: #fff;
 }
 
 header {
   background: #37556b;
+  margin-bottom: 50px;
 }
 
 header::after {
@@ -25,53 +27,6 @@ header::after {
 .logo {
   float: left;
   padding: 10px 0;
-}
-
-nav {
-  float: right;
-  padding-left: 2em;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-
-  position: relative;
-}
-
-nav a {
-  color: #1ab188;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: #1ab188;
-}
-
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: #1ab188;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
 }
 
 /* This allows changes made to the 'Browse by subject' title */
@@ -121,7 +76,7 @@ button {
   transition:  all 0.3s ease 0s;
   border-radius: 0.5em;
   color: #1ab188;
-  
+
 }
 /* Changes the hove on the button */
 button:hover{
@@ -152,13 +107,6 @@ input[type=text], select, textarea {
 
 #send_button:hover, #reset_button:hover {
   background-color: #c1bdba;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  width: 50%;
 }
 
 .social-links-container {
@@ -301,4 +249,81 @@ html{
 
 @media screen and (max-width: 290px) {
   .weekdays li, .days li {width: 12.2%;}
+}
+
+.menu, .menu-bg, .menu-burger {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 100%;
+  right: 25px;
+  top: 25px;
+}
+
+.menu-items {
+  position: absolute;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 10px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: .4s;
+  margin-top: 100px;
+  transform: translateY(-200%);
+  pointer-events: none;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-burger {
+  color: white;
+  padding-top: 13px;
+  -webkit-user-select: none;
+  cursor: pointer;
+  transition: .4s;
+  transform-origin: center;
+}
+
+.menu-burger.fs {
+  transform: rotate(-180deg) translateY(10px);
+}
+
+.menu-items div {
+  transition: 1s;
+  opacity: 0;
+  margin-top: 0px;
+}
+
+.menu-items.fs {
+  transform: translateY(0);
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.menu-items.fs div {
+  opacity: 1;
+  margin-top: 70px;
+}
+
+.menu-bg {
+  background: #13232f;
+  pointer-events: none;
+  transition: .3s;
+  right: 45px;
+  top: 45px;
+  transform: translate3d(50%, -50%, 0);
+  transform-origin: center center;
+}
+
+.menu-bg.fs {
+  transform: translate3d(50%, -50%, 0);
+  width: 300vw;
+  height: 300vw;
 }
