@@ -235,6 +235,7 @@ html{
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 18.5em 18.5em;
+  
 }
 
 /* Add media queries for smaller screens */
