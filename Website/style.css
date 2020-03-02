@@ -34,6 +34,12 @@ header::after {
   padding: 10px 0;
 }
 
+.container-tutor {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 /* This allows changes made to the 'Browse by subject' title */
 .browse{
   text-align: center;
