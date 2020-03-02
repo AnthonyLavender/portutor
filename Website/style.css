@@ -12,6 +12,7 @@ a {
 .h1 {
   font-size: 3.5em;
   text-align: center;
+  padding: 0.5em;
 }
 
 .para {
@@ -38,6 +39,15 @@ header::after {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  width: 40em;
+  margin: 0 auto;
+}
+/* This will change the go button on the tutor page  */
+.go {
+  width: 3.5em;
+  height: 2em;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 /* This allows changes made to the 'Browse by subject' title */
