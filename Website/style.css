@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
-*,h1,h2,h3,h4,h5,p,a,ul,li,div{
+*,h1,h2,h3,h4,h5,p,a,ul,li,div,label{
   font-family: 'Josefin Sans', sans-serif;
 }
 
