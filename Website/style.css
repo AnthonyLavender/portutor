@@ -116,6 +116,13 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+ form label {
+  color: #000000;
+}
+
+ form option {
+  color: #000000;
+}
 
 #send_button, #reset_button
 {
