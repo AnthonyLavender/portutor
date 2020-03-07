@@ -146,6 +146,7 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  color: #000000;
 }
 /* This will change he lable tag insode the form tag */
  form label {
@@ -374,4 +375,3 @@ input[type=text], select, textarea {
 @media screen and (max-width: 290px) {
   .weekdays li, .days li {width: 12.2%;}
 }
-
