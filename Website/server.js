@@ -1,19 +1,19 @@
 'use strict';
 
-// const express = require('express');
+const express = require('express');
 const mysql = require('mysql');
 
-// const app = express();
+const app = express();
 
 
-// app.use(express.static(__dirname));
-// app.use(express.static("public"))
-// app.use(express.json());
+app.use(express.static(__dirname));
+app.use(express.static("public"))
+app.use(express.json());
 
-// app.listen(8080, (err) => {
-// if (err) console.error('error starting server', err);
-// else console.log('server started');
-// });
+app.listen(8080, (err) => {
+if (err) console.error('error starting server', err);
+else console.log('server started');
+});
 
 
 const con = mysql.createConnection({
@@ -23,12 +23,12 @@ const con = mysql.createConnection({
   });
   
   con.connect(function(err) {
-    if (err) throw err;
+    if (err) console.log(err);
     console.log("Connected!");
   });
   
 
-// function error(res, msg) {
-//   res.sendStatus(500);
-//   console.error(msg);
-// }
+function error(res, msg) {
+  res.sendStatus(500);
+  console.error(msg);
+}
