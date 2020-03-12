@@ -402,6 +402,8 @@ input[type=text], select, textarea {
 
 
 /* booking session popup form */
+ {box-sizing: border-box;}
+
 .form-popup {
   display: none;
   position: fixed;
