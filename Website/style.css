@@ -362,6 +362,27 @@ input[type=text], select, textarea {
 
 }
 
+/* ---------Student Profile---------- */
+ .profile-card {
+   width: 25em;
+   margin: auto;
+   background: #f1f1f1f1;
+   border-radius: 0.5em;
+ }
+
+ .title {
+   color: #000000;
+ }
+
+ .image-container{
+   position: relative;
+ }
+
+ .info {
+   color: #4b4fe2;
+   margin-right: 16px;
+ }
+
 /* --------Media tags--------- */
 
 /* Add media queries for smaller screens */
