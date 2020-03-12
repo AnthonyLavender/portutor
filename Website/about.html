@@ -37,24 +37,19 @@
     </div>
     <h3>Contact us:</h3>
     <div class="container">
-      <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-        <label>Name:</label>
+      <form action="mailto:someone@example.com?subject=subject&body=body" method="post" enctype="text/plain" id="emailform">
+        <label class="emailFormLabel">Name:</label>
         <input type="text" id="fname" name="firstname" placeholder="Enter your full name">
-        <label>Email address:</label>
+        <label class="emailFormLabel">Email address:</label>
         <input type="text" id="emailInput" name="emailaddress" placeholder="Enter your email address.">
-        <label>Subject:</label>
+        <label class="emailFormLabel">Subject:</label>
         <input type="text" id="subjectInput" name="subject" placeholder="Enter the subject of the email.">
-        <label>Message:</label>
-        <textarea id="subjectInput" name="subject"></textarea>
+        <label class="emailFormLabel">Message:</label>
+        <textarea id="subjectInput" name="body"></textarea>
         <button id="send_button"> Send </button>
         <button id="reset_button"> Reset </button>
       </form>
 
-      <!--
-    <button class="send_button"> Send
-      <span class="popuptext" id="sendPopUp">Sent!</span>
-    </button>
--->
     </div>
 
     <div class="social-links-container">

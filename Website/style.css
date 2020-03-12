@@ -276,7 +276,9 @@ input[type=text], select, textarea {
   visibility: visible;
 
 }
-
+.emailFormLabel {
+  color: #fff;
+}
 /*-------------Profile page -----------------*/
 
 .profileContainer {
