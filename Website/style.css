@@ -6,7 +6,6 @@
 /* This will change any of the tags stated */
 *,h1,h2,h3,h4,h5,p,a,ul,li,div,label{
   font-family: 'Josefin Sans', sans-serif;
-  color: #f2f2f2
 }
 /* This will cahnge the look of everthing inside the html tag */
 html{
@@ -369,20 +368,33 @@ input[type=text], select, textarea {
    margin: auto;
    background: #f1f1f1f1;
    border-radius: 0.5em;
+   display: flex;
+   flex-direction: column;
  }
 
  .title {
    color: #000000;
+   padding: 0.6em;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+ }
  }
 
- .image-container{
-   position: relative;
+ .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
  }
 
- .info {
-   color: #4b4fe2;
-   margin-right: 16px;
+ .info{
+   padding: 1em;
+   text-align:left ;
+   display: flex;
+   flex-direction: column;
  }
+ }
+
 
 /* --------Media tags--------- */
 
