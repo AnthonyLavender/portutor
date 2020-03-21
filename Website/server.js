@@ -2,7 +2,6 @@
 
 const express = require('express');
 const mysql = require('mysql');
-
 const app = express();
 
 
@@ -21,14 +20,42 @@ const con = mysql.createConnection({
     user: "myusername",
     password: "mypassword"
   });
-  
+
   con.connect(function(err) {
     if (err) console.log(err);
     console.log("Connected!");
   });
-  
+
 
 function error(res, msg) {
   res.sendStatus(500);
   console.error(msg);
+}
+
+function hash(){
+  ///when has function gets made///
+}
+
+function insertProfile(res,msg,fullName,email,password,username,file,desc,location,price,avail,tutor,subject,stars){
+    app.get('/addProfile', (req,res) => {
+        let profile = {
+          profileName:fullName,
+          profileEmail:email,
+          profilePassword:hash(password),
+          profileUsername:username,
+          profilePrictureFile:file,
+          profileBio:desc,
+          profileTutorLocation:location,
+          profileTutorPrice:price,
+          profileAvailabilty:avail,
+          profileTutor:tutor,
+          profileSubjects:subject,
+          profileStars:stars,}
+        let sql = 'INSERT INTO profile SET ?';
+        let query = db.query(sql, profile, (err, result) => {
+          if(err) throw err;
+          console.log(result);
+          res.send('ProfileAdded...')
+        })
+    })
 }
