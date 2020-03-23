@@ -15,17 +15,23 @@ else console.log('server started');
 });
 
 
-// const con = mysql.createConnection({
-//     host: "localhost",
-//     user: "myusername",
-//     password: "mypassword"
-//   });
-//
-//   con.connect(function(err) {
-//     if (err) console.log(err);
-//     console.log("Connected!");
-//   });
-//
+const con = mysql.createConnection({
+    host: "127.0.0.1",
+    port: "8081",
+    user: "Admin",
+    password: "password123",
+    database: "SoftEngDatabase" 
+  });
+
+  con.connect(function(err) {
+    if (err) console.log(err);
+    console.log("Connected!");
+    con.query("CREATE DATABASE mydb", function(err,result){
+      if(err) throw err;
+         console.log(result);
+    })
+  });
+
 
 function error(res, msg) {
   res.sendStatus(500);
