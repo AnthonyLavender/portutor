@@ -64,3 +64,12 @@ function insertProfileBooking(bookingId,studentID,tutorId){
     profileTutor_ID:tutorId
   })
 }
+
+function insertTranscation(bookingId,price){
+  transactionDb.insert({
+    transaction_ID:idCreate(transactionDb),
+    booking_ID:bookingId,
+    transaction_Date:Date.now();,
+    transaction_Price:price
+  })
+}
