@@ -384,7 +384,7 @@ input[type=text], select, textarea {
  }
 
  .title {
-   color: #000000;
+   color: #f1f1f1f1;
    padding: 0.6em;
    text-align: center;
    display: flex;
