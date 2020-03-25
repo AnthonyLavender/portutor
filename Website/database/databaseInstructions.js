@@ -36,3 +36,5 @@ function insertProfile(name,email,password,UserName,pictureFileName,desc,
      profile_Stars:stars
    });
 };
+
+
