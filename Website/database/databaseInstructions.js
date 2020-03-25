@@ -34,6 +34,7 @@ function insertProfile(name,email,password,UserName,pictureFileName,desc,
      profile_Subject:subject,
      profile_Stars:stars
    });
+   console.log("Profile Inserted!");
 };
 
 function insertReviews(profileId1,profileId2,body,starNo){
@@ -44,6 +45,7 @@ function insertReviews(profileId1,profileId2,body,starNo){
       review_Body:body,
       review_Stars:starNo
   })
+  console.log("Review Inserted!");
 }
 
 function insertBooking(date,bookingID,price,location){
@@ -54,6 +56,7 @@ function insertBooking(date,bookingID,price,location){
     booking_price:price,
     booking_location:location
   })
+  console.log("Booking Inserted!");
 }
 
 function insertProfileBooking(bookingId,studentID,tutorId){
@@ -63,6 +66,7 @@ function insertProfileBooking(bookingId,studentID,tutorId){
     profileStudent_ID:studentID,
     profileTutor_ID:tutorId
   })
+  console.log("Profile Booking Inserted!");
 }
 
 function insertTranscation(bookingId,price){
@@ -72,4 +76,5 @@ function insertTranscation(bookingId,price){
     transaction_Date:Date.now();,
     transaction_Price:price
   })
+  console.log("Transaction Inserted!");
 }
