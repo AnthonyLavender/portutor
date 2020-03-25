@@ -132,3 +132,60 @@ h6 {font-size:18px;}
     margin-top: 30px;
   }
 }
+
+.mfp-month-view .mfp-header, .mfp-month-range-view .mfp-header {
+    flex: 0 0 auto;
+    display: none;
+    flex-direction: column;
+}
+.mfp-month-view .mfp-content .mfp-wrap .mfp-bg-row .mfp-bg-cell {
+    vertical-align: top;
+    padding-bottom: 80px;
+    flex: 1;
+    overflow: hidden;
+}
+.mfp-planner table td, .mfp-planner table th {
+    padding: 0;
+    color: black;
+}
+.mfp-month-view .mfp-header-weekdays, .mfp-month-view .mfp-bg-cell-header, .mfp-month-view .mfp-item-table .mfp-cell-header {
+    border-top: 1px solid;
+    color: black;
+}
+.mfp-popup .mfp-popup-content .mfp-buttons-row a.mfp-button {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 92px;
+    color: black;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 5px;
+}
+.mfp-month-view .mfp-content {
+    flex: none;
+    position: relative;
+    display: flex;
+    background-color: white;
+}
+.mfp-month-view .mfp-header-weeknumbers {
+    display: none;
+    flex: 0 0 30px;
+}
+.mfp-planner div {
+    box-sizing: border-box;
+    color: black;
+}
+.mfp-popup a {
+    cursor: pointer;
+    color: black;
+}
+.mfp-month-view .mfp-content .mfp-wrap .mfp-bg-row .mfp-bg-cell {
+    vertical-align: top;
+    flex: 1;
+    overflow: hidden;
+    border-top: 2px solid #3366cc;
+    border-right: 3px solid #3366cc;
+    box-shadow: 2px 0px 9px #eae8e8;
+    background-color: #dddde44a;
+}
