@@ -18,7 +18,6 @@ function idCreate(db){
     return id
 }
 
-
 function insertProfile(name,email,password,UserName,pictureFileName,desc,
   location,price,tutor,subject,stars){
    profileDb.insert({
@@ -36,3 +35,23 @@ function insertProfile(name,email,password,UserName,pictureFileName,desc,
      profile_Stars:stars
    });
 };
+
+function insertReviews(profileId1,profileId2,body,starNo){
+  reviewDb.insert({
+      review_ID: idCreate(reviewDb),
+      profile_Recievered_ID:profileId1,
+      profile_Sender_ID:profileId2,
+      review_Body:body,
+      review_Stars:starNo
+  })
+}
+
+function insertBooking(date,bookingID,price,location){
+  bookingDb.insert({
+    booking_ID:idCreate(bookingDb),
+    booking_Time_Date:date,
+    profileBooking_ID:bookingID,
+    booking_price:price,
+    booking_location:location
+  })
+}
