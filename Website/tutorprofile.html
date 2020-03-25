@@ -5,14 +5,69 @@
   <title>Tutor Profile</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="tutorprofile.css">
-  <link rel="stylesheet" href="style.css">
-
-  <link rel='stylesheet/scss' href='style.scss'>
-  <script  src='calendar.js'></script>
-
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="tutorprofile.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="calendar.css" rel="stylesheet" />
 </head>
+<style>
+.mfp-month-view .mfp-header, .mfp-month-range-view .mfp-header {
+    flex: 0 0 auto;
+    display: none;
+    flex-direction: column;
+}
+.mfp-month-view .mfp-content .mfp-wrap .mfp-bg-row .mfp-bg-cell {
+    vertical-align: top;
+    padding-bottom: 80px;
+    flex: 1;
+    overflow: hidden;
+}
+.mfp-planner table td, .mfp-planner table th {
+    padding: 0;
+    color: black;
+}
+.mfp-month-view .mfp-header-weekdays, .mfp-month-view .mfp-bg-cell-header, .mfp-month-view .mfp-item-table .mfp-cell-header {
+    border-top: 1px solid;
+    color: black;
+}
+.mfp-popup .mfp-popup-content .mfp-buttons-row a.mfp-button {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 92px;
+    color: black;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 5px;
+}
+.mfp-month-view .mfp-content {
+    flex: none;
+    position: relative;
+    display: flex;
+    background-color: white;
+}
+.mfp-month-view .mfp-header-weeknumbers {
+    display: none;
+    flex: 0 0 30px;
+}
+.mfp-planner div {
+    box-sizing: border-box;
+    color: black;
+}
+.mfp-popup a {
+    cursor: pointer;
+    color: black;
+}
+.mfp-month-view .mfp-content .mfp-wrap .mfp-bg-row .mfp-bg-cell {
+    vertical-align: top;
+    flex: 1;
+    overflow: hidden;
+    border-top: 2px solid #3366cc;
+    border-right: 3px solid #3366cc;
+    box-shadow: 2px 0px 9px #eae8e8;
+    background-color: #dddde44a;
+}
+</style>
 <body>
   <header>
     <div class="container">
@@ -20,7 +75,7 @@
         <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
       </div>
 	  <div class="menu-bg"></div>
-	  <div class="menu-burger">☰</div>
+	  <div class="menu-burger">&nbsp;☰</div>
 	  <div class="menu-items">
 		  <div><a href="index.html">HOME</a></div>
 		  <div><a href="about.html">ABOUT</a></div>
@@ -107,84 +162,18 @@
 <section class="container">
 	<div class="row">
 		<div class="col-md-12 col-sm-12">
-			<div class="education">
-				<div class="calendar">
-					<div class="calendar__month">
-					  <div class="cal-month__previous"><</div>
-					  <div class="cal-month__current"></div>
-					  <div class="cal-month__next">></div>
-					</div>
-					<div class="calendar__head">
-					  <div class="cal-head__day"></div>
-					  <div class="cal-head__day"></div>
-					  <div class="cal-head__day"></div>
-					  <div class="cal-head__day"></div>
-					  <div class="cal-head__day"></div>
-					  <div class="cal-head__day"></div>
-					  <div class="cal-head__day"></div>
-					</div>
-					<div class="calendar__body">
-					  <div class="cal-body__week">
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-					  </div>
-					  <div class="cal-body__week">
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-					  </div>
-					  <div class="cal-body__week">
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-					  </div>
-					  <div class="cal-body__week">
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-					  </div>
-					  <div class="cal-body__week">
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-					  </div>
-					  <div class="cal-body__week">
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-						<div class="cal-body__day"></div>
-					  </div>
-					</div>
-				</div>
+			<div class="education" style="height: 870px;!important;">
+        <div style="position: absolute; width: 90%; height: 90%;">
+    			<div id="calendar" style="height: 100%; width: 100%;"></div>
+    		</div>
 			</div>
 		</div>
 	</div>
 	<br><br><br>
 </section>
 </div>
+<script src="googlescheduling.js" type="text/javascript"></script>
+<script src="portutorbooking.js" type="text/javascript"></script>
+<script src="portutortabling.js" type="text/javascript"></script>
 </body>
 </html>

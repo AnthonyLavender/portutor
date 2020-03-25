@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
-
 /* ----------Every page-------------- */
-
 /* This will change any of the tags stated */
-*,h1,h2,h3,h4,h5,p,a,ul,li,div,label{
+*, h1, h2, h3, h4, h5, p, a, ul, li, div, label {
   font-family: 'Josefin Sans', sans-serif;
 }
+
 /* This will cahnge the look of everthing inside the html tag */
-html{
+html {
   background-color: #13232f;
 }
+
 /* This will change the anchor tags */
 a {
   text-decoration: none;
   color: #fff;
 }
+
 /* The will change the titles that have been use */
 .h1 {
   font-size: 3.5em;
@@ -23,21 +24,25 @@ a {
   padding: 0.5em;
   color: #fff;
 }
+
 /* This will change the paragraphs that have been used */
 .para {
   color: #fff;
 }
+
 /* This will change the style of the header tag  */
 header {
   background: #37556b;
   margin-bottom: 50px;
 }
+
 /* This will chage what happens after the header is used */
 header::after {
   content: '';
   display: table;
   clear: both;
 }
+
 /* This will changge what thesyle of the logo */
 .logo {
   float: left;
@@ -106,14 +111,14 @@ header::after {
 }
 
 .menu-bg {
-    background: #047eda;
-    opacity: unset;
-    pointer-events: none;
-    transition: .3s;
-    right: 50px;
-    top: 50px;
-    transform: translate3d(50%, -50%, 0);
-    transform-origin: center center;
+  background: #047eda;
+  opacity: unset;
+  pointer-events: none;
+  transition: .3s;
+  right: 50px;
+  top: 50px;
+  transform: translate3d(50%, -50%, 0);
+  transform-origin: center center;
 }
 
 .menu-bg.fs {
@@ -127,15 +132,16 @@ button {
   background-color: #13232f;
   border: #13232f;
   cursor: pointer;
-  transition:  all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   border-radius: 0.5em;
   color: #1ab188;
-
 }
+
 /* Changes the hove on the button */
-button:hover{
+button:hover {
   background-color: #c1bdba
 }
+
 /* This chages the syle of the text input boxes  */
 input[type=text], select, textarea {
   width: 100%;
@@ -148,32 +154,34 @@ input[type=text], select, textarea {
   resize: vertical;
   color: #000000;
 }
+
 /* This will change he lable tag insode the form tag */
- form label {
+form label {
   color: #000000;
 }
+
 /* This will change the option tag inside the form tag */
- form option {
+form option {
   color: #000000;
 }
+
 /* Styles the send and reset button  */
-#send_button, #reset_button
-{
+#send_button, #reset_button {
   background-color: #1ab188;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition:  all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
+
 /* Styles the hover of the send and reset button  */
 #send_button:hover, #reset_button:hover {
   background-color: #c1bdba;
 }
 
 /* -------------Tutor page--------------- */
-
 /* This will change the container used on the tutor page  */
 .container-tutor {
   border-radius: 5px;
@@ -182,6 +190,7 @@ input[type=text], select, textarea {
   width: 40em;
   margin: 0 auto;
 }
+
 /* This will change the go button on the tutor page  */
 .go {
   width: 3.5em;
@@ -191,9 +200,8 @@ input[type=text], select, textarea {
 }
 
 /* ---------Index page----------- */
-
 /* This allows changes made to the 'Browse by subject' title */
-.browse{
+.browse {
   text-align: center;
   color: #1ab188;
   font-family: 'Josefin Sans', sans-serif;
@@ -220,8 +228,9 @@ input[type=text], select, textarea {
   border-radius: 0.5em;
   border: #c1bdba;
 }
+
 /* Will change the signup grid container */
-.grid-container-signup{
+.grid-container-signup {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 18.5em 18.5em;
@@ -233,7 +242,6 @@ input[type=text], select, textarea {
 }
 
 /* --------About page--------- */
-
 /* This changes the layout of the social links  */
 .social-links-container {
   display: grid;
@@ -241,6 +249,7 @@ input[type=text], select, textarea {
   grid-template-columns: 4.7em 4.7em 4.7em 4.7em;
   padding: 2em;
 }
+
 /* This changes the individual social links */
 .social-links-items {
   padding: 2em;
@@ -274,13 +283,13 @@ input[type=text], select, textarea {
 
 .popup .show {
   visibility: visible;
-
 }
+
 .emailFormLabel {
   color: #fff;
 }
-/*-------------Profile page -----------------*/
 
+/*-------------Profile page -----------------*/
 .profileContainer {
   margin: auto;
   width: 600px;
@@ -291,12 +300,15 @@ input[type=text], select, textarea {
   border-radius: 0.5em;
   border: #c1bdba;
 }
-.profileListFlex {display: flex; justify-content: center;}
+
+.profileListFlex {
+  display: flex;
+  justify-content: center;
+}
 
 .profileImg {
   width: 50%;
 }
-
 
 .month {
   margin: auto;
@@ -335,7 +347,6 @@ input[type=text], select, textarea {
   width: 600px;
   background-color: #BA55D3;
   text-align: left;
-
 }
 
 .weekdays li {
@@ -358,11 +369,11 @@ input[type=text], select, textarea {
   width: 13.6%;
   text-align: center;
   margin-bottom: 5px;
-  font-size:13px;
+  font-size: 13px;
   color: #777;
 }
 
-.search-container{
+.search-container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -370,61 +381,67 @@ input[type=text], select, textarea {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 18.5em 18.5em;
-
 }
 
 /* ---------Student Profile---------- */
- .profile-card {
-   width: 25em;
-   margin: auto;
-   background: #f1f1f1f1;
-   border-radius: 0.5em;
-   align-items: center;
+.profile-card {
+  width: 25em;
+  margin: auto;
+  background: #f1f1f1f1;
+  border-radius: 0.5em;
+  align-items: center;
   justify-content: center;
- }
+}
 
- .title {
-   color: #f1f1f1f1;
-   padding: 0.6em;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
- }
+.title {
+  color: #f1f1f1f1;
+  padding: 0.6em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
 
-
- .image-container {
+.image-container {
   display: flex;
   align-items: center;
   justify-content: center;
- }
+}
 
- .info{
-   padding: 1em;
-   text-align:left ;
-   display: flex;
-   flex-direction: column;
- }
-
+.info {
+  padding: 1em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
 
 /* --------Media tags--------- */
-
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
+  .weekdays li, .days li {
+    width: 13.1%;
+  }
 }
 
 @media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
+  .weekdays li, .days li {
+    width: 12.5%;
+  }
+
+  .days li .active {
+    padding: 2px;
+  }
 }
 
 @media screen and (max-width: 290px) {
-  .weekdays li, .days li {width: 12.2%;}
+  .weekdays li, .days li {
+    width: 12.2%;
+  }
 }
 
-
 /* booking session popup form */
- {box-sizing: border-box;}
+  {
+  box-sizing: border-box;
+}
 
 .form-popup {
   display: none;
@@ -455,7 +472,7 @@ input[type=text], select, textarea {
   border: none;
   cursor: pointer;
   width: 100%;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   opacity: 0.8;
 }
 
