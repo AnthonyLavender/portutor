@@ -189,3 +189,11 @@ h6 {font-size:18px;}
     box-shadow: 2px 0px 9px #eae8e8;
     background-color: #dddde44a;
 }
+.mfp-item {
+    display: flex;
+    height: 100%;
+    border: 1px solid;
+    background-color: #bed4ff;
+    font-size: 13px;
+    font-weight: 600;
+}
