@@ -1,7 +1,6 @@
 {
   "name": "website",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.1",
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
@@ -13,5 +12,6 @@
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
