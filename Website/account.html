@@ -1,91 +1,94 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <title>Register/Login - PortTutor</title>
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="account.css">
   <link rel="stylesheet" href="style.css">
-  <body>
-    <header>
-      <div class="container">
-        <div class="logo">
-          <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
-        </div>
-        <div class="menu-bg"></div>
-        <div class="menu-burger">&nbsp;☰</div>
-        <div class="menu-items">
-          <div><a href="index.html">HOME</a></div>
-          <div><a href="about.html">ABOUT</a></div>
-          <div><a href="tutorsearch.html">SEARCH</a></div>
-          <div><a href="tutorsearch.html">TUTOR</a></div>
-          <div><a href="account.html">ACCOUNT</a></div>
-        </div>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
       </div>
-    </header>
-    <div class="form">
-          <ul class="tab-group">
-            <li class="tab active"><a href="#signup">Sign Up</a></li>
-            <li class="tab"><a href="#login">Log In</a></li>
-          </ul>
-          <div class="tab-content">
-            <div id="signup">
-              <h1>Register in less than a minute!</h1>
-              <form action="/" method="post">
-              <div class="top-row">
-                <div class="field-wrap">
-                  <label>
-                    First Name<span class="req">*</span>
-                  </label>
-                  <input type="text" required autocomplete="off" />
-                </div>
-                <div class="field-wrap">
-                  <label>
-                    Last Name<span class="req">*</span>
-                  </label>
-                  <input type="text" required autocomplete="off"/>
-                </div>
-              </div>
-              <div class="field-wrap">
-                <label>
-                  Email Address<span class="req">*</span>
-                </label>
-                <input type="email" required autocomplete="off"/>
-              </div>
-              <div class="field-wrap">
-                <label>
-                  Set A Password<span class="req">*</span>
-                </label>
-                <input type="password" required autocomplete="off"/>
-              </div>
-              <button type="submit" class="button button-block"/>Get Started</button>
-              </form>
+      <div class="menu-bg"></div>
+      <div class="menu-burger">☰</div>
+      <div class="menu-items">
+        <div><a href="index.html">HOME</a></div>
+        <div><a href="about.html">ABOUT</a></div>
+        <div><a href="tutorsearch.html">SEARCH</a></div>
+        <div><a href="tutorsearch.html">TUTOR</a></div>
+        <div><a href="account.html">ACCOUNT</a></div>
+      </div>
+    </div>
+  </header>
+  <div class="form">
+    <ul class="tab-group">
+      <li class="tab active"><a href="#signup">Sign Up</a></li>
+      <li class="tab"><a href="#login">Log In</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="signup">
+        <h1>Register in less than a minute!</h1>
+        <form action="/" method="post">
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
             </div>
-            <div id="login">
-              <h1>Welcome back!</h1>
-              <form action="/" method="post">
-                <div class="field-wrap">
-                <label>
-                  Email Address<span class="req">*</span>
-                </label>
-                <input type="email"required autocomplete="off"/>
-              </div>
-              <div class="field-wrap">
-                <label>
-                  Password<span class="req">*</span>
-                </label>
-                <input type="password"required autocomplete="off"/>
-              </div>
-              <button class="button button-block"/>Log In</button>
-              </form>
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
             </div>
           </div>
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email" required autocomplete="off" />
+          </div>
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off" />
+          </div>
+          <button type="submit" class="button button-block" />Get Started</button>
+        </form>
+      </div>
+      <div id="login">
+        <h1>Welcome back!</h1>
+        <form action="/" method="post">
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email" required autocomplete="off" />
+          </div>
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off" />
+          </div>
+          <button class="button button-block" />Log In</button>
+        </form>
+      </div>
     </div>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="script.js"></script>
-    <script src="account.js"></script>
-  </body>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="script.js"></script>
+  <script src="account.js"></script>
+</body>
 
 </html>
