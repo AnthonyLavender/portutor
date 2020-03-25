@@ -48,6 +48,7 @@ button:hover {
 }
 
 .container-contact100 {
+  z-index: -1;
   width: 95%;
   min-height: 100vh;
   display: -webkit-box;
@@ -56,7 +57,7 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -150px;
+  margin-bottom: -300px;
   justify-content: center;
   align-items: center;
   position: relative;
