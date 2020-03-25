@@ -3,7 +3,8 @@
 const express = require('express');
 const DataStore = require('nedb');
 const app = express();
-
+const moment = require('moment');
+  moment().format();
 
 app.use(express.static(__dirname));
 app.use(express.static("public"))

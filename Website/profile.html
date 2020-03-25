@@ -6,6 +6,7 @@
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="slider.css">
+<link rel="stylesheet/less" type="text/css"  href="calender.less">
 </head>
 <body>
   <header>
@@ -25,100 +26,8 @@
       </div>
     </div>
   </header>
-  <div id="slideshow">
-    <div id="slides">
-      <img src="Images/tutor4.jpg">
-      <img src="Images/tutor4.jpg">
-    </div>
-  </div>
- <div class="profileContainer">
-   <h1>Leonie Smith</h1>
-   <h1>English Teacher</h1>
-   <h3>Member Since: January 2020</h3>
-   <h3>£31.25 per hour</h3>
-   <h4>Information about Leonie</h4>
-   <p>I believe learning should be enjoyable as well as effective. I also believe that the teaching style and content of lessons should be personalised for the infividual student. I remain an enthusiastic and committed teacher.</p>
-   <h4>Experience & Qualifications</h4>
-   <p>In my 40 years as a teacher I have taught mant ability levels. I have graduated from the University of Greenwich with an ESOL Diploma and had my Master's degree in Applied Englihs from the University in Manchester.</p>
-   <h4>My Skills</h4>
-
-   <h1>Check Availability</h1>
-
-</div>
-<div class="month">
-<ul>
- <li class="prev">&#10094;</li>
- <li class="next">&#10095;</li>
- <li>
-   March<br>
-   <span style="font-size:18px">2020</span>
- </li>
-</ul>
-</div>
-
-<ul class="weekdays">
-<li>Mo</li>
-<li>Tu</li>
-<li>We</li>
-<li>Th</li>
-<li>Fr</li>
-<li>S</li>
-<li>Su</li>
-</ul>
-
-<ul class="days">
-<li>1. Available</li>
-<li>2. Available</li>
-<li>3. Booked</li>
-<li>4. Booked</li>
-<li>5. Available</li>
-<li>6. Unavailable</li>
-<li>7. Unavailable</li>
-<li>8. Available</li>
-<li>9. Booked</li>
-<li>10. Available</li>
-<li>11. Available</li>
-<li>12. Available</li>
-<li>13. Unavailable</li>
-<li>14. Unavailable</li>
-<li>15. Booked</li>
-<li>16. Available</li>
-<li>17. Available</li>
-<li>18. Available</li>
-<li>19. Available</li>
-<li>20. Unavailable</li>
-<li>21. Unavailable</li>
-<li>22. Booked</li>
-<li>23. Available</li>
-<li>24. Booked</li>
-<li>25. Available</li>
-<li>26. Available</li>
-<li>27. Unavailable</li>
-<li>28. Unavailable</li>
-<li>29. Available</li>
-<li>30. Available</li>
-<button class="open-button" onclick="openForm()">30. Available</button>
-</div>
-</ul>
-
-
-
-<div class="form-popup" id="myForm" >
-  <form action="/action_page.php" method="form-container">
-  <h1>Session Confirmation</h1>
-
-  <label for=" password"><b>password</b></label>
-  <input type="text" placeholder="Enter Password" name="password" required>
-
-  <button type="submit" class="btn">Login</button>
-  <button type="submit" class="btn cancel" onclick="CloseForm()">Close</button>
-
-  </form>
-</div>
-
-
-
-
+ 
+  <div calendar class="calendar" id="calendar"></div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="script.js"></script>
 <script src="profile.js">
