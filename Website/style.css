@@ -142,19 +142,6 @@ button:hover {
   background-color: #c1bdba
 }
 
-/* This chages the syle of the text input boxes  */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  color: #000000;
-}
-
 /* This will change he lable tag insode the form tag */
 form label {
   color: #000000;

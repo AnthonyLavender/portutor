@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <title>About PortTutor</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="util.css">
+  <link rel="stylesheet" type="text/css" href="about.css">
 </head>
-
 <body>
   <header>
     <div class="container">
@@ -27,30 +27,51 @@
     </div>
   </header>
   <div class="page">
-    <div class="para">
-      <h2>About us</h2>
-      <div>
-        At PorTutor passionate about finding the best tutor for you and your studies. As you take this step to improving
-        your future, PorTutor will be by your side the whole way.
+    <span class="contact100-form-title" style="margin-left:0px;">
+      About PorTutor
+    </span>
+    <center>
+      <span class="about-form">
+        At PorTutor passionate about finding the best tutor for you and your studies.
+        <br>
+        As you take this step to improving your future, PorTutor will be by your side the whole way.
+      </span>
+    </center>
       </div>
     </div>
-    <h3>Contact us:</h3>
-    <div class="container">
-      <form action="mailto:someone@example.com?subject=subject&body=body" method="post" enctype="text/plain" id="emailform">
-        <label class="emailFormLabel">Name:</label>
-        <input type="text" id="fname" name="firstname" placeholder="Enter your full name">
-        <label class="emailFormLabel">Email address:</label>
-        <input type="text" id="emailInput" name="emailaddress" placeholder="Enter your email address.">
-        <label class="emailFormLabel">Subject:</label>
-        <input type="text" id="subjectInput" name="subject" placeholder="Enter the subject of the email.">
-        <label class="emailFormLabel">Message:</label>
-        <textarea id="subjectInput" name="body"></textarea>
-        <button id="send_button"> Send </button>
-        <button id="reset_button"> Reset </button>
-      </form>
-
-    </div>
-
+    	<div class="container-contact100">
+    		<div class="wrap-contact100">
+    			<form class="contact100-form validate-form">
+    				<span class="contact100-form-title">
+    					Send Us A Message
+    				</span>
+    				<div class="wrap-input100 validate-input" data-validate="Please enter your name">
+    					<input class="input100" type="text" name="name" placeholder="Full Name">
+    					<span class="focus-input100"></span>
+    				</div>
+    				<div class="wrap-input100 validate-input" data-validate = "Please enter your email: e@a.x">
+    					<input class="input100" type="text" name="email" placeholder="E-mail">
+    					<span class="focus-input100"></span>
+    				</div>
+    				<div class="wrap-input100 validate-input" data-validate = "Please enter your phone">
+    					<input class="input100" type="text" name="phone" placeholder="Phone">
+    					<span class="focus-input100"></span>
+    				</div>
+    				<div class="wrap-input100 validate-input" data-validate = "Please enter your message">
+    					<textarea class="input100" name="message" placeholder="Your Message"></textarea>
+    					<span class="focus-input100"></span>
+    				</div>
+    				<div class="container-contact100-form-btn">
+    					<button class="contact100-form-btn">
+    						<span>
+    							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+    							Send
+    						</span>
+    					</button>
+    				</div>
+    			</form>
+    		</div>
+    	</div>
     <div class="social-links-container">
       <div class="social-links-items">
         <img src="images/facebook.png" alt="facebook logo">
@@ -69,5 +90,4 @@
   <script src='jquery.min.js'></script>
   <script src="script.js"></script>
 </body>
-
 </html>
