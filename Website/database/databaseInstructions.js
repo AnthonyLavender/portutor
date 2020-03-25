@@ -55,3 +55,21 @@ function insertBooking(date,bookingID,price,location){
     booking_location:location
   })
 }
+
+function insertProfileBooking(bookingId,studentID,tutorId){
+  profileBookingDb.insert({
+    profileBooking_ID:idCreate(profileBookingDb),
+    booking_ID:bookingId,
+    profileStudent_ID:studentID,
+    profileTutor_ID:tutorId
+  })
+}
+
+function insertTranscation(bookingId,price){
+  transactionDb.insert({
+    transaction_ID:idCreate(transactionDb),
+    booking_ID:bookingId,
+    transaction_Date:Date.now();,
+    transaction_Price:price
+  })
+}
