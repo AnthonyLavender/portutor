@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="tutorsearch.css">
 </head>
 <body>
   <header>
@@ -25,33 +26,61 @@
     </div>
   </header>
   <div class="page">
-
 	<div class="h1">
 		<div class="para">
-			<h1>Search for tutor</h1>
+			<h1>Disinction starts here.</h1>
 		</div>
 	</div>
-
-	<form class="container-tutor">
-
-		<input type="text" id="subject" name="subject" placeholder="Enter Subject">
-
-		<select name="Level" placeholder="All Levels">
-			<option value="Degree">Degree</option>
-			<option value="A-level">A-level</option>
-			<option value="GCSE">GCSE</option>
-		</select>
-		<input type="text" id="location" name="location" placeholder="Location">
-		<lable>Rating 1-5</lable>
-		<input type="range" id="rating" min="1" max="5" value="3">
-		<label>Price £0-100:</label>
-		<input type="range" id="price" min="0" max="100">
-
-		<button class="go" id="go"> Go! </button>
+	<form class="tutorsearch-form" action="" method="post">
+		<div class="form-header">
+			<h1>Search for your next tutor</h1>
+		</div>
+		<div class="form-body">
+			<div class="horizontal-group">
+				<div class="form-group left">
+					<label for="subject" class="label-title">Enter Subject *</label>
+					<input type="text" id="subject" class="form-input" placeholder="the one you want to get A+ in" required="required" />
+				</div>
+				<div class="form-group right" >
+					<label class="label-title">Degree *</label>
+					<select class="form-input" id="level" >
+						<option value="B">A-Levels</option>
+						<option value="I">GCSE</option>
+					</select>
+				</div>
+			<div class="form-group">
+				<label for="location" class="label-title">Location *</label>
+				<input type="text" id="location" class="form-input" placeholder="your post code" required="required">
+			</div>
+			<div class="horizontal-group">
+				<div class="form-group left">
+					<label for="rating" class="label-title">Tutor's Rating</label>
+					<input type="range" min="1" max="5" step="1"  value="0" id="rating" class="form-input" onChange="change();" style="height:28px;width:78%;padding:0;">
+					<span id="range-label">5 &#9734;</span>
+				</div>
+				<div class="form-group right">
+					<label for="pricing" class="label-title">Price Per Session</label>
+					<input type="range" min="10" max="100" step="5"  value="0" id="pricing" class="form-input" onChange="change();" style="height:28px;width:78%;padding:0;">
+					<span id="range-label2">100£</span>
+				</div>
+			</div>
+		<div class="form-footer">
+			<span>* required</span>
+			<button type="submit" class="btn">Search</button>
+		</div>
 	</form>
+	<script>
+		var rangeLabel = document.getElementById("range-label");
+		var rangeLabel2 = document.getElementById("range-label2");
+		var rating = document.getElementById("rating");
+		var pricing = document.getElementById("pricing");
+		function change() {
+		rangeLabel.innerText = rating.value + "";
+		rangeLabel2.innerText = pricing.value + "£";
+		}
+	</script>
 	<script src='jquery.min.js'></script>
 	<script src="script.js"></script>
 	<script src="tutorSearch.js"></script>
 </body>
-
 </html>

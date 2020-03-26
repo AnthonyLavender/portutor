@@ -8,7 +8,7 @@
 
 /* This will cahnge the look of everthing inside the html tag */
 html {
-  background-color: #13232f;
+  background:linear-gradient(to right, #78a7ba 0%, #385D6C 50%, #78a7ba 99%);
 }
 
 /* This will change the anchor tags */
