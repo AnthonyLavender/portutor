@@ -41,16 +41,17 @@
 			<option value="A-level">A-level</option>
 			<option value="GCSE">GCSE</option>
 		</select>
-		<input type="text" id="post" placeholder="Post code">
-		<lable>Rating</lable>
+		<input type="text" id="location" placeholder="Location">
+		<lable>Rating 1-5</lable>
 		<input type="range" min="1" max="5">
 		<label>Price £0-100:</label>
 		<input type="range" min="0" max="100">
 
-		<button class="go"> Go! </button>
+		<button class="go" onclick="searchSubject()"> Go! </button>
 	</form>
 	<script src='jquery.min.js'></script>
 	<script src="script.js"></script>
+	<script src="tutorSearch.js"></script>
 </body>
 
 </html>

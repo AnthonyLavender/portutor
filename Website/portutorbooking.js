@@ -17,7 +17,7 @@ function handleItemDoubleClick(sender, args) {
 	var form = new TimeForm(sender, args.item, "edit");
 	form.showForm();
 }
-
+//// For calendar////
 function handleSelectionEnd(sender, args) {
 	var item = new p.Item();
 	item.startTime = args.startTime;
