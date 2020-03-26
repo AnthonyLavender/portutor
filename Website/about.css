@@ -48,7 +48,6 @@ button:hover {
 }
 
 .container-contact100 {
-  z-index: -1;
   width: 95%;
   min-height: 100vh;
   display: -webkit-box;
