@@ -32,7 +32,7 @@ a {
 
 /* This will change the style of the header tag  */
 header {
-  background: #37556b;
+  background: #181c1f;
   margin-bottom: 50px;
 }
 
@@ -44,7 +44,7 @@ header::after {
 }
 
 /* This will changge what thesyle of the logo */
-.logo {
+.mainlogo {
   float: left;
   padding: 10px 0;
 }
@@ -485,9 +485,19 @@ form option {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #859ddf;
+  background: #181c1f;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #355cc9;
+}
+
+header {
+  position: relative;
+  z-index: 2!important;
+}
+
+body {
+  position: relative;
+  z-index: -1!important;
 }

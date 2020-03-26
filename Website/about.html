@@ -8,24 +8,31 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="util.css">
   <link rel="stylesheet" type="text/css" href="about.css">
+  <link rel="stylesheet" type="text/css" href="menu.css">
 </head>
-<body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
-      </div>
-      <div class="menu-bg"></div>
-      <div class="menu-burger">☰</div>
-      <div class="menu-items">
-        <div><a href="index.html">HOME</a></div>
-        <div><a href="about.html">ABOUT</a></div>
-        <div><a href="tutorsearch.html">SEARCH</a></div>
-        <div><a href="tutorsearch.html">TUTOR</a></div>
-        <div><a href="account.html">ACCOUNT</a></div>
-      </div>
+<header class="header">
+    <div class="mainlogo">
+      <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
     </div>
-  </header>
+  <div class="burger">
+    <div class="burger__patty"></div>
+    <div class="burger__patty"></div>
+    <div class="burger__patty"></div>
+  </div>
+  <nav class="menu">
+    <div class="menu__brand">
+      <a href="index.html"><div class="logo"><img src="Images/logo.png" alt="logo"></div></a>
+    </div>
+    <ul class="menu__list">
+      <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+      <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+      <li class="menu__item"><a href="tutorsearch.html" class="menu__link">Search</a></li>
+      <li class="menu__item"><a href="tutorresults.html" class="menu__link">Tutors</a></li>
+      <li class="menu__item"><a href="account.html" class="menu__link">Sign Up / Login</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
   <div class="page">
     <span class="contact100-form-title" style="margin-left:0px;">
       About PorTutor
