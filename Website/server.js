@@ -2,24 +2,10 @@
 
 const express = require('express');
 const DataStore = require('nedb');
+const bodyParser = require('body-Parser')
 const app = express();
 
-
-app.use(express.static(__dirname));
-app.use(express.static("public"))
-app.use(express.json());
-
-app.listen(8080, (err) => {
-  if (err) console.error('error starting server', err);
-  else console.log('server started');
-});
-
-function error(res, msg) {
-  res.sendStatus(500);
-  console.error(msg);
-}
-
-const profileDb = new DataStore("database/profile.db");
+const profileDb = new DataStore({filename:"database/profile.db",autoload:true});
 const bookingDb = new DataStore("database/booking.db");
 const transactionDb = new DataStore("database/transaction.db");
 const profileBookingDb = new DataStore("database/profileBooking.db");
@@ -30,6 +16,38 @@ bookingDb.loadDatabase();
 transactionDb.loadDatabase();
 profileBookingDb.loadDatabase();
 reviewsDb.loadDatabase();
+
+app.use(express.static(__dirname));
+app.use(express.static("public"))
+app.use(express.json());
+
+app.listen(8080, (err) => {
+  if (err) console.error('error starting server', err);
+  else console.log('server started');
+
+});
+
+function error(res, msg) {
+  res.sendStatus(500);
+  console.error(msg);
+};
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.get('/tutor', (req, res) => {
+var subject = req.body.subject;
+console.log(subject);
+var location = req.body.location;
+console.log(location);
+profileDb.find({profile_Subject:subject,profile_Tutor_Location:location}, (err, data) => {
+    if (err) {
+      res.end();
+      return;
+    }
+    res.json(data);
+
+
+  });
+});
 
 // profileDb.insert({
 //   profile_ID:"XXXXXXXX",
