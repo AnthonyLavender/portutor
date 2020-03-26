@@ -31,22 +31,46 @@ function error(res, msg) {
   res.sendStatus(500);
   console.error(msg);
 };
-app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use( bodyParser.json() );  
 
 app.get('/tutor', (req, res) => {
-var subject = req.body.subject;
-console.log(subject);
-var location = req.body.location;
-console.log(location);
-profileDb.find({profile_Subject:subject,profile_Tutor_Location:location}, (err, data) => {
+profileDb.find({}, (err, data) => {
     if (err) {
       res.end();
       return;
     }
     res.json(data);
-
-
   });
+});
+
+app.post('/SearchForTutor', (req, res) => {
+  console.log('Got body:', req.body);
+  res.sendStatus(200);
+  console.log(req.body);
+  // var obj = JSON.parse(req.body);
+  // console.log(obj);
+  var subject = req.body.Subject;
+  var degree = req.body.Degree;
+  var location = req.body.Location;
+  var rating = req.body.RatingValue;
+  var price = req.body.PriceValue;
+
+  profileDb.find({
+    profile_Subject:subject,
+    profile_Tutor:"True",
+    profile_Tutor_Price:price
+  }, (err, data) => {
+    if (err) {
+      // res.end();
+      console.log("data not recieved")
+      return;
+    }
+    // res.json(data);
+    console.log(data);
+  });
+  console.log("Hi");
 });
 
 // profileDb.insert({
