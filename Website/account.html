@@ -78,20 +78,24 @@
       </div>
       <div id="login">
         <h1>Welcome back!</h1>
+<<<<<<< HEAD
+        <form id = "LoginForm" action="/" method="post">
+=======
         <form action="/logIn" method="post">
+>>>>>>> 2c9c60bb29b5282cb8ea1d0f4a2fc7c27ac487d9
           <div class="field-wrap">
             <label>
               Email Address<span class="req">*</span>
             </label>
-            <input type="email" required autocomplete="off" />
+            <input type="email" required autocomplete="off" id = "emailInput"/>
           </div>
           <div class="field-wrap">
             <label>
               Password<span class="req">*</span>
             </label>
-            <input type="password" required autocomplete="off" />
+            <input type="password" required autocomplete="off" id = "passwordInput"/>
           </div>
-          <button class="button button-block" />Log In</button>
+          <button class="button button-block" id = "loginBtn"/>Log In</button>
         </form>
       </div>
     </div>
