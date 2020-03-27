@@ -9,12 +9,12 @@ async function getData(){
     
 }
 
- function tutorSeperator(data){
-     console.log(data[0]);
-     console.log("------------------------------------------");
-     console.log(data);
-     console.log("------------------------------------------");   
-}
+//  function tutorSeperator(data){
+//      console.log(data[0]);
+//      console.log("------------------------------------------");
+//      console.log(data);
+//      console.log("------------------------------------------");   
+// }
 
 // const myForm = document.getElementsByClassName("tutorsearch-form");
 //     for (let j = 0; j<myForm.length-1;j++ ){

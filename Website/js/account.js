@@ -31,3 +31,29 @@ $('.tab a').on('click', function(e) {
   $('.tab-content > div').not(target).hide();
   $(target).fadeIn(550);
 });
+
+
+
+async function getProfileData(){
+  const response = await fetch('/getProfileData');
+  const data = await response.json();
+  console.log(data);
+  return data
+};
+
+window.onload = function(){
+  let LoginForm = document.getElementById("LoginForm");
+  LoginForm.addEventListener("sumbit",()=>{
+  e.preventDefault();
+  let email = document.getElementById("emailInput").value;
+  let HashedPassword = passwordHash.generate(document.getElementById("passwordInput").value);
+
+  let userData = getProfileData();
+
+    for(let i = 0; i < userData.length; i++){
+      if (userData[i].profile_Email == email && userData[i].profile_Password == HashedPassword){
+
+      }{data.splice(i,1)};
+    }
+  });
+}
