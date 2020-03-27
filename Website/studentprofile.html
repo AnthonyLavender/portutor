@@ -1,124 +1,132 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-  <meta charset="utf-8">
-  <title>Student Profile</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Student Profile</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/studentprofile.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <header class="header">
-		<div class="mainlogo">
-			<a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+	<div class="mainlogo">
+		<a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+	</div>
+	<div class="burger">
+		<div class="burger__patty"></div>
+		<div class="burger__patty"></div>
+		<div class="burger__patty"></div>
+	</div>
+	<nav class="menu">
+		<div class="menu__brand">
+			<a href="index.html">
+				<div class="logo"><img src="./img/logo.png" alt="logo"></div>
+			</a>
 		</div>
-  <div class="burger">
-    <div class="burger__patty"></div>
-    <div class="burger__patty"></div>
-    <div class="burger__patty"></div>
-  </div>
-  <nav class="menu">
-    <div class="menu__brand">
-      <a href="index.html"><div class="logo"><img src="./img/logo.png" alt="logo"></div></a>
-    </div>
-    <ul class="menu__list">
-      <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-      <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+		<ul class="menu__list">
+			<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+			<li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
 			<li class="menu__item"><a href="tutorsearch.html" class="menu__link">Search</a></li>
-      <li class="menu__item"><a href="tutorresults.html" class="menu__link">Tutors</a></li>
-      <li class="menu__item"><a href="account.html" class="menu__link">Sign Up / Login</a></li>
-    </ul>
-  </nav>
+			<li class="menu__item"><a href="tutorresults.html" class="menu__link">Tutors</a></li>
+			<li class="menu__item"><a href="account.html" class="menu__link">Sign Up / Login</a></li>
+		</ul>
+	</nav>
 </header>
+
 <body>
-<div class="tofront">
-<span class="topsection">
-	<div class="container">
-		<div class="row" style="margin-bottom:30px;">
-			<div class="col-md-12 col-sm-12">
-				<img src="./img/profile.png" width="200px" class="./img-responsive img-circle tm-border">
-				<hr>
-				<h1 class="tm-title bold shadow">Will Williams</h1>
-				<h1 class="white bold shadow">Student</h1>
-			</div>
-		</div>
-	</div>
-</span>
-<section class="container">
-	<div class="row">
-		<div class="col-md-6 col-sm-12">
-			<div class="about">
-				<h2 class="accent">About Me</h2>
-				<p>I am a student looking for a tutor to help me with my studies and improve my current skills. I will need help with my programming.</p>
-			</div>
-		</div>
-		<div class="col-md-6 col-sm-12">
-			<div class="skills">
-				<h2>Subjects</h2>
-				<strong>Database</strong>
-				<span class="pull-right">65%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar"
-                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+	<div class="tofront">
+		<span class="topsection">
+			<div class="container">
+				<div class="row" style="margin-bottom:30px;">
+					<div class="col-md-12 col-sm-12">
+						<img src="./img/profile.png" width="200px" class="./img-responsive img-circle tm-border">
+						<hr>
+						<h1 class="tm-title bold shadow">Will Williams</h1>
+						<h1 class="white bold shadow">Student</h1>
 					</div>
-				<strong>Programming</strong>
-				<span class="pull-right">25%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
-					</div>
-				<strong>Networking</strong>
-				<span class="pull-right">40%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar"
-                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
-					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-</section>
-<section class="container">
-	<div class="row">
-		<div class="col-md-8 col-sm-12">
-			<div class="education">
-				<h2>Education</h2>
-					<div class="education-content">
-						<h4 class="education-title accent">University of Portsmouth</h4>
+		</span>
+		<section class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<div class="about">
+						<h2 class="accent">About Me</h2>
+						<p>I am a student looking for a tutor to help me with my studies and improve my current skills.
+							I will need help with my programming.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="skills">
+						<h2>Subjects</h2>
+						<strong>Database</strong>
+						<span class="pull-right">65%</span>
+						<div class="progress">
+							<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="65"
+								aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+						</div>
+						<strong>Programming</strong>
+						<span class="pull-right">25%</span>
+						<div class="progress">
+							<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="25"
+								aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+						</div>
+						<strong>Networking</strong>
+						<span class="pull-right">40%</span>
+						<div class="progress">
+							<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40"
+								aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-12">
+					<div class="education">
+						<h2>Education</h2>
+						<div class="education-content">
+							<h4 class="education-title accent">University of Portsmouth</h4>
 							<div class="education-school">
 								<h5>BSc (Hons) Computing</h5><span></span>
 								<h5>Sep 2018 - Jun 2021</h5>
 							</div>
-						<p class="education-description">I am currently a student at the University of Portmouth studying computing.
-              I am Looking for a tutor to help with my programming as I would like to improve to help with my coursework</p>
+							<p class="education-description">I am currently a student at the University of Portmouth
+								studying computing.
+								I am Looking for a tutor to help with my programming as I would like to improve to help
+								with my coursework</p>
+						</div>
 					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="pricing">
+						<h2>Location</h2>
+						<ul>
+							<li>Fawset Road</li>
+							<li>Southsea</li>
+							<li>Portmouth</li>
+							<li>PO5 2PD</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-4 col-sm-12">
-			<div class="pricing">
-				<h2>Location</h2>
-	 <ul>
-     <li>Fawset Road</li>
-     <li>Southsea</li>
-     <li>Portmouth</li>
-     <li>PO5 2PD</li>
-   </ul>
+		</section>
+		<section class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="education">
+						<h2>Calendar goes here...</h2>
+					</div>
+				</div>
 			</div>
-		</div>
+			<br><br><br>
+		</section>
 	</div>
-</section>
-<section class="container">
-	<div class="row">
-		<div class="col-md-12 col-sm-12">
-			<div class="education">
-				<h2>Calendar goes here...</h2>
-			</div>
-		</div>
-	</div>
-	<br><br><br>
-</section>
-</div>
 </body>
 <script src='js/jquery.min.js'></script>
 <script src="js/script.js"></script>
+
 </html>
