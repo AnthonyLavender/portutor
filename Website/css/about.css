@@ -1,8 +1,9 @@
+/* This will allow us to change what the input bars look like */
 input {
 	outline: none;
 	border: none;
 }
-
+/* This will allow us to change the specific number input bar */
 input[type="number"] {
     -moz-appearance: textfield;
     appearance: none;
@@ -13,16 +14,16 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-
+/* This will allow us to change how the text area looks */
 textarea {
   outline: none;
   border: none;
 }
-
+/* This adds the zoom in feature of the text area */
 textarea:focus, input:focus {
   border-color: transparent !important;
 }
-
+/* This chnges the colour of input boxes */
 input::-webkit-input-placeholder { color: #bdbdd3;}
 input:-moz-placeholder { color: #bdbdd3;}
 input::-moz-placeholder { color: #bdbdd3;}
@@ -32,21 +33,21 @@ textarea::-webkit-input-placeholder { color: #bdbdd3;}
 textarea:-moz-placeholder { color: #bdbdd3;}
 textarea::-moz-placeholder { color: #bdbdd3;}
 textarea:-ms-input-placeholder { color: #bdbdd3;}
-
+/* Changes the style of the button  */
 button {
 	outline: none !important;
 	border: none;
 	background: transparent;
 }
-
+/* Change the look of the hover of the button */
 button:hover {
 	cursor: pointer;
 }
-
+/* Changes what the general container looks like */
 .container {
 	max-width: 1200px;
 }
-
+/* This changes the look of the form they are filling out */
 .container-contact100 {
   width: 95%;
   min-height: 100vh;
@@ -61,13 +62,13 @@ button:hover {
   position: relative;
 	margin-bottom: -50px;
 }
-
+/* This changes the look of the all the input boxes  */
 .wrap-contact100 {
   width: 550px;
   background: transparent;
   padding: 50px 0px 160px 0px;
 }
-
+/* Makes sure the width of the form is correct  */
 .contact100-form {
   width: 100%;
 }
