@@ -31,7 +31,7 @@
 }
 
 .form-body .label-title {
-  color:#1BBA93;
+  color:#047eda;
   font-size: 17px;
   font-weight: bold;
 }
@@ -70,7 +70,7 @@ input[type="file"] {
 #range-label, #range-label2 {
   width:15%;
   padding:5px;
-  background-color: #1BBA93;
+  background-color: #047eda;
   color:white;
   border-radius: 5px;
   font-size: 17px;
@@ -103,7 +103,7 @@ input[type="file"] {
 .btn {
    display:inline-block;
    padding:10px 20px;
-   background-color: #1BBA93;
+   background-color: #047eda;
    font-size:17px;
    border:none;
    border-radius:5px;
@@ -112,6 +112,6 @@ input[type="file"] {
 }
 
 .btn:hover {
-  background-color: #169c7b;
+  background-color: #047eda;
   color:white;
 }
