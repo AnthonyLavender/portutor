@@ -3,10 +3,8 @@ getData();
 async function getData(){
     console.log("test");
     const response = await fetch('/getProfileData');
-    const data = await response.json();
-    const object = document.getElementsByClassName("btn");
-    object.onclick = () => tutorSeperator(data);
-    
+    const data = await response.json();   
+
 }
 
 //  function tutorSeperator(data){
