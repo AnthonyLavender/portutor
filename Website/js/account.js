@@ -52,7 +52,7 @@ window.onload = function(){
 
     for(let i = 0; i < userData.length; i++){
       if (userData[i].profile_Email == email && userData[i].profile_Password == HashedPassword){
-
+        
       }{data.splice(i,1)};
     }
   });
