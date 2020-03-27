@@ -56,17 +56,13 @@ app.get('/getProfileData',(req,res)=>{
       });
 });
 
-<<<<<<< HEAD
 app.post('/LoginUser' , (req, res) => {
   console.log('Got Body: ', req.body);
   res.sendStatus(200);
   console.log(req.body);
 })
 
-// profileDb.insert({
-//   profile_ID:"XXXXXXXX",
-//   profile_Name:"John",
-=======
+
 app.get('/getReviewData',(req,res)=>{
   reviewsDb.find({
       }, (err, data) => {
@@ -139,7 +135,7 @@ app.get('/logIn', (req,res)=>{
 //   });
 //   console.log("Hi");
 // });
->>>>>>> 2c9c60bb29b5282cb8ea1d0f4a2fc7c27ac487d9
+
 //   profile_Email:"Fake@Fmail.com",
 //   profile_Password:"*********",
 //   profile_Username:"UserName",
