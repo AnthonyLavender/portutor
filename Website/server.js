@@ -62,9 +62,7 @@ app.post('/LoginUser' , (req, res) => {
   console.log(req.body);
 })
 
-// profileDb.insert({
-//   profile_ID:"XXXXXXXX",
-//   profile_Name:"John",
+
 app.get('/getReviewData',(req,res)=>{
   reviewsDb.find({
       }, (err, data) => {

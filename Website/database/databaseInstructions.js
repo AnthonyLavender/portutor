@@ -73,8 +73,11 @@ function insertTranscation(bookingId,price){
   transactionDb.insert({
     transaction_ID:idCreate(transactionDb),
     booking_ID:bookingId,
-    transaction_Date:Date.now();,
+    transaction_Date:Date.now(),
     transaction_Price:price
   })
   console.log("Transaction Inserted!");
 }
+
+
+
