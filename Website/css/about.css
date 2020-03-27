@@ -56,10 +56,10 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -300px;
   justify-content: center;
   align-items: center;
   position: relative;
+	margin-bottom: -50px;
 }
 
 .wrap-contact100 {
