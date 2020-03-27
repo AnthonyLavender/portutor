@@ -33,11 +33,8 @@ function error(res, msg) {
 };
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use( bodyParser.json() );  
 app.use( bodyParser.json() );
 
-app.get('/tutor', (req, res) => {
-profileDb.find({}, (err, data) => {
 app.get('/getBookingData', (req, res) => {
   bookingDb.find({}, (err, data) => {
     if (err) {
@@ -48,33 +45,8 @@ app.get('/getBookingData', (req, res) => {
   });
 });
 
-app.post('/SearchForTutor', (req, res) => {
-  console.log('Got body:', req.body);
-  res.sendStatus(200);
-  console.log(req.body);
-  // var obj = JSON.parse(req.body);
-  // console.log(obj);
-  var subject = req.body.Subject;
-  var degree = req.body.Degree;
-  var location = req.body.Location;
-  var rating = req.body.RatingValue;
-  var price = req.body.PriceValue;
-
 app.get('/getProfileData',(req,res)=>{
   profileDb.find({
-    profile_Subject:subject,
-    profile_Tutor:"True",
-    profile_Tutor_Price:price
-  }, (err, data) => {
-    if (err) {
-      // res.end();
-      console.log("data not recieved")
-      return;
-    }
-    // res.json(data);
-    console.log(data);
-  });
-  console.log("Hi");
       }, (err, data) => {
         if (err) {
           res.end();
@@ -84,6 +56,7 @@ app.get('/getProfileData',(req,res)=>{
       });
 });
 
+<<<<<<< HEAD
 app.post('/LoginUser' , (req, res) => {
   console.log('Got Body: ', req.body);
   res.sendStatus(200);
@@ -93,6 +66,7 @@ app.post('/LoginUser' , (req, res) => {
 // profileDb.insert({
 //   profile_ID:"XXXXXXXX",
 //   profile_Name:"John",
+=======
 app.get('/getReviewData',(req,res)=>{
   reviewsDb.find({
       }, (err, data) => {
@@ -165,6 +139,7 @@ app.post('/logIn', (req,res)=>{
 //   });
 //   console.log("Hi");
 // });
+>>>>>>> 2c9c60bb29b5282cb8ea1d0f4a2fc7c27ac487d9
 //   profile_Email:"Fake@Fmail.com",
 //   profile_Password:"*********",
 //   profile_Username:"UserName",
