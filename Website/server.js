@@ -93,6 +93,9 @@ app.post('/tutorresults', (req,res)=>{
   res.sendFile(__dirname + '/tutorresults.html');
 });
 
+app.post('/logIn', (req,res)=>{
+  res.sendFile(__dirname + '/studentprofile.html');
+});
 
 
 

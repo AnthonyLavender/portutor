@@ -12,33 +12,37 @@
 	<link rel="stylesheet" href="css/testimonials.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<style>
-	.para p, .grid-item a {
-		color:#4d656f!important;
-	}
+		.para p,
+		.grid-item a {
+			color: #4d656f !important;
+		}
 	</style>
 </head>
 <header class="header">
-		<div class="mainlogo">
-			<a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+	<div class="mainlogo">
+		<a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+	</div>
+	<div class="burger">
+		<div class="burger__patty"></div>
+		<div class="burger__patty"></div>
+		<div class="burger__patty"></div>
+	</div>
+	<nav class="menu">
+		<div class="menu__brand">
+			<a href="index.html">
+				<div class="logo"><img src="./img/logo.png" alt="logo"></div>
+			</a>
 		</div>
-  <div class="burger">
-    <div class="burger__patty"></div>
-    <div class="burger__patty"></div>
-    <div class="burger__patty"></div>
-  </div>
-  <nav class="menu">
-    <div class="menu__brand">
-      <a href="index.html"><div class="logo"><img src="./img/logo.png" alt="logo"></div></a>
-    </div>
-    <ul class="menu__list">
-      <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-      <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+		<ul class="menu__list">
+			<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+			<li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
 			<li class="menu__item"><a href="tutorsearch.html" class="menu__link">Search</a></li>
-      <li class="menu__item"><a href="tutorresults.html" class="menu__link">Tutors</a></li>
-      <li class="menu__item"><a href="account.html" class="menu__link">Sign Up / Login</a></li>
-    </ul>
-  </nav>
+			<li class="menu__item"><a href="tutorresults.html" class="menu__link">Tutors</a></li>
+			<li class="menu__item"><a href="account.html" class="menu__link">Sign Up / Login</a></li>
+		</ul>
+	</nav>
 </header>
+
 <body>
 	<div id="slideshow">
 		<div id="slides">
@@ -81,39 +85,41 @@
 	</div>
 	<br><br><br>
 	<div class="testimonial-container">
-	<div class="dk-container">
-		<div class="cd-testimonials-wrapper cd-container">
-			<h2>Testimonials</h2>
-			<ul class="cd-testimonials">
-				<li>
-					<div class="testimonial-content">
-						<p>" I was able to get a distinction with PorTutor, the whole process was easy, fast and very convenient. I totally recommend it. "</p>
-						<div class="cd-author">
-							<img src="./img/student.jpg" alt="Author image">
-							<ul class="cd-author-info">
-								<li>Sarah<strong> Simpson</strong><br><span>First Year Student</span></li>
-								<li></li>
-							</ul>
+		<div class="dk-container">
+			<div class="cd-testimonials-wrapper cd-container">
+				<h2>Testimonials</h2>
+				<ul class="cd-testimonials">
+					<li>
+						<div class="testimonial-content">
+							<p>" I was able to get a distinction with PorTutor, the whole process was easy, fast and
+								very convenient. I totally recommend it. "</p>
+							<div class="cd-author">
+								<img src="./img/student.jpg" alt="Author image">
+								<ul class="cd-author-info">
+									<li>Sarah<strong> Simpson</strong><br><span>First Year Student</span></li>
+									<li></li>
+								</ul>
+							</div>
 						</div>
-					</div>
-				</li>
-				<li>
-					<div class="testimonial-content">
-						<p>" After months of looking for affordable tutors, PorTutor was my key to finding the best tutors in town in one place. "</p>
-						<div class="cd-author">
-							<img src="./img/student.jpg" alt="Author image">
-							<ul class="cd-author-info">
-								<li>Maria<strong> Collins</strong><br><span>Third Year Student</span></li>
-								<li></li>
-							</ul>
+					</li>
+					<li>
+						<div class="testimonial-content">
+							<p>" After months of looking for affordable tutors, PorTutor was my key to finding the best
+								tutors in town in one place. "</p>
+							<div class="cd-author">
+								<img src="./img/student.jpg" alt="Author image">
+								<ul class="cd-author-info">
+									<li>Maria<strong> Collins</strong><br><span>Third Year Student</span></li>
+									<li></li>
+								</ul>
+							</div>
 						</div>
-					</div>
-				</li>
-			</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
-</div>
-<br><br><br>
+	<br><br><br>
 </body>
 <footer class="footer">
   <div class="footer__addr">
@@ -151,20 +157,21 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/jquery.flexslider.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.0/masonry.pkgd.min.js'></script>
 <script>
-jQuery(document).ready(function($) {
-	$('.cd-testimonials-wrapper').flexslider({
-		selector: ".cd-testimonials > li",
-		animation: "slide",
-		controlNav: true,
-		slideshow: false,
-		smoothHeight: true,
-		start: function() {
-			$('.cd-testimonials').children('li').css({
-				'opacity': 1,
-				'position': 'relative'
-			});
-		}
+	jQuery(document).ready(function ($) {
+		$('.cd-testimonials-wrapper').flexslider({
+			selector: ".cd-testimonials > li",
+			animation: "slide",
+			controlNav: true,
+			slideshow: false,
+			smoothHeight: true,
+			start: function () {
+				$('.cd-testimonials').children('li').css({
+					'opacity': 1,
+					'position': 'relative'
+				});
+			}
+		});
 	});
-});
 </script>
+
 </html>

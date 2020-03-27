@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <title>Register/Login - PortTutor</title>
@@ -12,9 +13,9 @@
   <link rel="stylesheet" href="css/menu.css">
 </head>
 <header class="header">
-    <div class="mainlogo">
-      <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
-    </div>
+  <div class="mainlogo">
+    <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+  </div>
   <div class="burger">
     <div class="burger__patty"></div>
     <div class="burger__patty"></div>
@@ -22,7 +23,9 @@
   </div>
   <nav class="menu">
     <div class="menu__brand">
-      <a href="index.html"><div class="logo"><img src="./img/logo.png" alt="logo"></div></a>
+      <a href="index.html">
+        <div class="logo"><img src="./img/logo.png" alt="logo"></div>
+      </a>
     </div>
     <ul class="menu__list">
       <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
@@ -33,6 +36,7 @@
     </ul>
   </nav>
 </header>
+
 <body>
   <div class="form">
     <ul class="tab-group">
@@ -42,7 +46,7 @@
     <div class="tab-content">
       <div id="signup">
         <h1>Register in less than a minute!</h1>
-        <form action="/" method="post">
+        <form action="/logIn" method="post">
           <div class="top-row">
             <div class="field-wrap">
               <label>
@@ -74,7 +78,7 @@
       </div>
       <div id="login">
         <h1>Welcome back!</h1>
-        <form action="/" method="post">
+        <form action="/logIn" method="post">
           <div class="field-wrap">
             <label>
               Email Address<span class="req">*</span>
@@ -99,7 +103,7 @@
 <footer class="footer">
   <div class="footer__addr">
     <img class="footer__logo" src="img/logo.png">
-    <h2>Disintction is one click away.</h2>
+    <h2>Distinction is one click away.</h2>
       <p>Born from the University of Portsmouth</p>
       <p>Portsmouth, United Kingdom</p>
     </address>
