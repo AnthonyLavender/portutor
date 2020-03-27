@@ -48,7 +48,7 @@ header::after {
   float: left;
   padding: 10px 0;
 }
-
+/* This will change the look of the burger menu */
 .menu, .menu-bg, .menu-burger {
   position: fixed;
   width: 50px;
@@ -59,7 +59,7 @@ header::after {
   right: 25px;
   top: 25px;
 }
-
+/* This will change the items with in the burger menu */
 .menu-items {
   position: absolute;
   font-weight: bold;
@@ -74,12 +74,12 @@ header::after {
   transform: translateY(-200%);
   pointer-events: none;
 }
-
+/* This chnged the anchor tags inside the menu */
 .menu-items a {
   text-decoration: none;
   color: #fff;
 }
-
+/* This will change the look of the burger menu */
 .menu-burger {
   color: white;
   padding-top: 13px;
@@ -88,7 +88,7 @@ header::after {
   transition: .4s;
   transform-origin: center;
 }
-
+/* This makes the burger rotate one clicked  */
 .menu-burger.fs {
   transform: rotate(-180deg) translateY(10px);
 }
@@ -242,7 +242,7 @@ form option {
   padding: 2em;
   cursor: pointer;
 }
-
+/* This changes the popup */
 .popup {
   position: relative;
   display: inline-block;
@@ -252,7 +252,7 @@ form option {
   -ms-user-select: none;
   user-select: none;
 }
-
+/* This changs what the popup looks like */
 .popup .popuptext {
   visibility: hidden;
   width: 160px;
@@ -277,6 +277,7 @@ form option {
 }
 
 /*-------------Profile page -----------------*/
+/* This will change the layout of the profile page */
 .profileContainer {
   margin: auto;
   width: 600px;
