@@ -1,6 +1,6 @@
 # PorTutor
 
-Getting ready!
+###Getting ready!
 
 * Fist clone this repository 
 * Next open in command line or bash 
