@@ -6,13 +6,19 @@
 	<title>PortTutor Homepage</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="slider.css">
-	<link rel="stylesheet" href="menu.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/testimonials.css">
+	<style>
+	.para p, .grid-item a {
+		color:#4d656f!important;
+	}
+	</style>
 </head>
 <header class="header">
 		<div class="mainlogo">
-			<a href="index.html"><img src="Images/logo.png" alt="logo"></a>
+			<a href="index.html"><img src="./img/logo.png" alt="logo"></a>
 		</div>
   <div class="burger">
     <div class="burger__patty"></div>
@@ -21,7 +27,7 @@
   </div>
   <nav class="menu">
     <div class="menu__brand">
-      <a href="index.html"><div class="logo"><img src="Images/logo.png" alt="logo"></div></a>
+      <a href="index.html"><div class="logo"><img src="./img/logo.png" alt="logo"></div></a>
     </div>
     <ul class="menu__list">
       <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
@@ -35,20 +41,18 @@
 <body>
 	<div id="slideshow">
 		<div id="slides">
-			<img src="Images/img1.jpg">
-			<img src="Images/img2.jpg">
+			<img src="./img/img1.jpg">
+			<img src="./img/img2.jpg">
 		</div>
 		<h2 class="slidetext">Distinction is only one click away.</h2>
 	</div>
-	<div class="h1">
-		Browse by subject
-	</div>
+	<br><br>
 	<div class="grid-container-signup">
 		<div class="grid-item">
 			<div class="para">
-				<h4>Are you a student?</h4>
+				<p>Are you a student?</p>
 				<p>Looking for a tutor?</p>
-				<p>Trying to get a first?</p>
+				<br>
 			</div>
 			<a href="account.html">
 				<button class="grid-item" herf="signup.html">Sign up</button>
@@ -56,26 +60,81 @@
 		</div>
 		<div class="grid-item">
 			<div class="para">
-				<h4>Are you a tutor?</h4>
-				<p>You looking to tutor?</p>
-				<p>Looking to make money?</p>
+				<p>Are you a tutor?</p>
+				<p>With a teaching experience?</p>
+				<br>
 			</div>
 			<a href="account.html">
 				<button class="grid-item" herf="signup.html">Sign up</button>
 			</a>
 		</div>
 	</div>
+	<div class="h1">Browse By Subject</div>
 	<div class="grid-container">
-		<button class="grid-item"><a href="tutorsearch.html">Academic </a></button>
-		<button class="grid-item"><a href="tutorsearch.html"> Languages </a></button>
-		<button class="grid-item"><a href="tutorsearch.html"> Music </a></button>
-		<button class="grid-item"><a href="tutorsearch.html"> Art </a></button>
-		<button class="grid-item"><a href="tutorsearch.html"> Health</a></button>
-		<button class="grid-item"><a href="tutorsearch.html">IT</a></button>
+		<button class="grid-item"><a href="tutorsearch.html?sub=Academic"> Academic </a></button>
+		<button class="grid-item"><a href="tutorsearch.html?sub=Languages"> Languages </a></button>
+		<button class="grid-item"><a href="tutorsearch.html?sub=Music"> Music </a></button>
+		<button class="grid-item"><a href="tutorsearch.html?sub=Art"> Art </a></button>
+		<button class="grid-item"><a href="tutorsearch.html?sub=Health"> Health</a></button>
+		<button class="grid-item"><a href="tutorsearch.html?sub=IT"> IT</a></button>
 	</div>
+	<br><br><br>
+	<div class="testimonial-container">
+	<div class="dk-container">
+		<div class="cd-testimonials-wrapper cd-container">
+			<h2>Testimonials</h2>
+			<ul class="cd-testimonials">
+				<li>
+					<div class="testimonial-content">
+						<p>" I was able to get a distinction with PorTutor, the whole process was easy, fast and very convenient. I totally recommend it. "</p>
+						<div class="cd-author">
+							<img src="./img/student.jpg" alt="Author image">
+							<ul class="cd-author-info">
+								<li>Sarah<strong> Simpson</strong><br><span>First Year Student</span></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="testimonial-content">
+						<p>" After months of looking for affordable tutors, PorTutor was my key to finding the best tutors in town in one place. "</p>
+						<div class="cd-author">
+							<img src="./img/student.jpg" alt="Author image">
+							<ul class="cd-author-info">
+								<li>Maria<strong> Collins</strong><br><span>Third Year Student</span></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<br><br><br>
 </body>
-<script src='jquery.min.js'></script>
-<script src="script.js"></script>
-<script src="slider.js"></script>
-
+<script src='js/jquery.min.js'></script>
+<script src="js/script.js"></script>
+<script src="js/slider.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/jquery.flexslider.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.0/masonry.pkgd.min.js'></script>
+<script>
+jQuery(document).ready(function($) {
+	$('.cd-testimonials-wrapper').flexslider({
+		selector: ".cd-testimonials > li",
+		animation: "slide",
+		controlNav: true,
+		slideshow: false,
+		smoothHeight: true,
+		start: function() {
+			$('.cd-testimonials').children('li').css({
+				'opacity': 1,
+				'position': 'relative'
+			});
+		}
+	});
+});
+</script>
 </html>
