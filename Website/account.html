@@ -10,11 +10,17 @@
   <link rel="stylesheet" href="account.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="css/account.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
 </head>
 <header class="header">
     <div class="mainlogo">
       <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
     </div>
+  <div class="mainlogo">
+    <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+  </div>
   <div class="burger">
     <div class="burger__patty"></div>
     <div class="burger__patty"></div>
@@ -23,6 +29,9 @@
   <nav class="menu">
     <div class="menu__brand">
       <a href="index.html"><div class="logo"><img src="Images/logo.png" alt="logo"></div></a>
+      <a href="index.html">
+        <div class="logo"><img src="./img/logo.png" alt="logo"></div>
+      </a>
     </div>
     <ul class="menu__list">
       <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
@@ -43,6 +52,7 @@
       <div id="signup">
         <h1>Register in less than a minute!</h1>
         <form action="/" method="post">
+        <form action="/logIn" method="post">
           <div class="top-row">
             <div class="field-wrap">
               <label>
@@ -75,6 +85,7 @@
       <div id="login">
         <h1>Welcome back!</h1>
         <form id = "LoginForm" action="/" method="post">
+        <form action="/logIn" method="post">
           <div class="field-wrap">
             <label>
               Email Address<span class="req">*</span>
@@ -97,4 +108,5 @@
   <script src="account.js"></script>
 </body>
 
+</html>
 </html>
