@@ -232,3 +232,14 @@ h6 {font-size:18px;}
 .shadow {
     box-shadow: 0 0rem 0rem rgba(0,0,0,.15)!important;
 }
+button {
+    font-size: 24px;
+    background-color: #13232f;
+    border: #13232f;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-radius: 0.5em;
+    color: #518bff;
+    padding: 5px 15px 5px 15px;
+    margin-bottom:60px;
+}
