@@ -164,3 +164,29 @@ html, body {
     color: orange;
     cursor: pointer;
   }
+  .topsection img {
+      display: inline-block !important;
+      border-radius: 50px;
+  }
+  tr {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-right: 1px #2d0248 solid;
+      border-left: 1px #2d0248 solid;
+      border-top: 1px #2d0248 solid;
+      border-bottom: 1px #2d0248 solid;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  }
+  td, th {
+      border-right: 1px #2d0248 solid;
+      border-left: 1px #2d0248 solid;
+      border-top: 1px #2d0248 solid;
+      border-bottom: 1px #2d0248 solid;
+      font-size: 18px;
+      padding: 7px 7px 7px 7px;
+      font-weight: 800;
+      color: #2d0248;
+  }

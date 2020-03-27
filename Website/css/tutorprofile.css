@@ -243,3 +243,7 @@ button {
     padding: 5px 15px 5px 15px;
     margin-bottom:60px;
 }
+.topsection img {
+    display: inline-block !important;
+    border-radius: 50px;
+}
