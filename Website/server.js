@@ -33,10 +33,10 @@ function error(res, msg) {
 };
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use( bodyParser.json() );  
+app.use( bodyParser.json() );
 
-app.get('/tutor', (req, res) => {
-profileDb.find({}, (err, data) => {
+app.get('/getBookingData', (req, res) => {
+  bookingDb.find({}, (err, data) => {
     if (err) {
       res.end();
       return;
@@ -45,37 +45,86 @@ profileDb.find({}, (err, data) => {
   });
 });
 
-app.post('/SearchForTutor', (req, res) => {
-  console.log('Got body:', req.body);
-  res.sendStatus(200);
-  console.log(req.body);
-  // var obj = JSON.parse(req.body);
-  // console.log(obj);
-  var subject = req.body.Subject;
-  var degree = req.body.Degree;
-  var location = req.body.Location;
-  var rating = req.body.RatingValue;
-  var price = req.body.PriceValue;
-
+app.get('/getProfileData',(req,res)=>{
   profileDb.find({
-    profile_Subject:subject,
-    profile_Tutor:"True",
-    profile_Tutor_Price:price
-  }, (err, data) => {
-    if (err) {
-      // res.end();
-      console.log("data not recieved")
-      return;
-    }
-    // res.json(data);
-    console.log(data);
-  });
-  console.log("Hi");
+      }, (err, data) => {
+        if (err) {
+          res.end();
+          return;
+        }
+        res.json(data);
+      });
 });
 
-// profileDb.insert({
-//   profile_ID:"XXXXXXXX",
-//   profile_Name:"John",
+app.get('/getReviewData',(req,res)=>{
+  reviewsDb.find({
+      }, (err, data) => {
+        if (err) {
+          res.end();
+          return;
+        }
+        res.json(data);
+      });
+});
+
+app.get('/getTransactionData',(req,res)=>{
+  transactionDb.find({
+      }, (err, data) => {
+        if (err) {
+          res.end();
+          return;
+        }
+        res.json(data);
+      });
+});
+
+app.get('/getProfileBookingData',(req,res)=>{
+  profileBookingDb.find({
+      }, (err, data) => {
+        if (err) {
+          res.end();
+          return;
+        }
+        res.json(data);
+      });
+});
+
+app.post('/tutorresults', (req,res)=>{
+  res.sendFile(__dirname + '/tutorresults.html');
+});
+
+
+
+
+
+// app.post('/SearchForTutor', (req, res) => {
+//   console.log('Got body:', req.body);
+//   res.sendStatus(200);
+//   console.log(req.body);
+//   // var obj = JSON.parse(req.body);
+//   // console.log(obj);
+//   const subject2 = req.body.Subject;
+//   var degree = req.body.Degree;
+//   var location = req.body.Location;
+//   var rating = req.body.RatingValue;
+//   var price = req.body.PriceValue;
+//   console.log(subject2);
+//   const subject = JSON.stringify(subject2);
+//   console.log(subject);
+
+//   profileDb.find({
+//     profile_Tutor:"True"
+//   }, (err, data) => {
+//     if (err) {
+//       // res.end();
+//       console.log("data not recieved")
+//       return;
+//     }
+//     // res.json(data);
+//     console.log(data);
+//   });
+//   console.log("Hi");
+// });
 //   profile_Email:"Fake@Fmail.com",
 //   profile_Password:"*********",
 //   profile_Username:"UserName",

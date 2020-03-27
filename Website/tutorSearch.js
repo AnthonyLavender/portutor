@@ -1,53 +1,41 @@
-'use strict';
+getData();
 
-window.onbeforeunload = function (){
-        let elementList = document.getElementsByClassName("form-input");
-        console.log("Hi");
-        let subjectValue = elementList[0].value;
-        let degreeValue = elementList[1].value;
-        let LocationValue = elementList[2].value;
-        let RatingValue = elementList[3].value;
-        let PriceValue = elementList[4].value;
-        console.log("There");
-
-        let data = { 
-            "Subject" : subjectValue,
-            "Degree" : degreeValue,
-            "Location" : LocationValue,
-            "RatingValue" : RatingValue,
-            "PriceValue" : PriceValue
-        };
-        console.log("How");
-        console.log(data);
-        let json = JSON.stringify(data);
-        console.log(json);
-        console.log("are");
-        const options = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: json
-        };
-        console.log("you");
-        fetch('/SearchForTutor', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: json
-        })
-        console.log("bossman");
+async function getData(){
+    console.log("test");
+    const response = await fetch('/getProfileData');
+    const data = await response.json();
+    tutorSeperator(data);
+    
 }
 
-// function f1() {
-//     alert("f1 called");
-//     //form validation that recalls the page showing with supplied inputs.    
-// }
-// window.onload = function() {
-//     document.getElementById("Save").onclick = function fun() {
-//         alert("hello");
-//         f1();
-//         //validation code to see State field is mandatory.  
-//     }
-// }
+
+function tutorSeperator(data){
+    console.log(data[0]);
+    // const data=tutorSeperator(data);
+    console.log("------------------------------------------")
+    // console.log(tutorData);
+    // for (let i = 0; i<data.length-1;i++ ){
+    //     if (data[i].profile_Tutor==="False"){data.splice(i,1)};
+    // };  
+    console.log(data);
+    var btn = document.getElementsByClassName('btn');
+    let elementList = document.getElementsByClassName("form-input");
+    console.log("Hi");
+    let subjectValue = elementList[0].value;
+    // let degreeValue = elementList[1].value;
+    let LocationValue = elementList[2].value;
+    let RatingValue = elementList[3].value;
+    let PriceValue = elementList[4].value;
+
+    for (let i = 0; i<data.length-1;i++ ){
+        if (data[i].profile_Tutor==="False" || 
+        data[i].profile_Subject!=subjectValue ||
+        data[i].profile_Tutor_Location!=LocationValue 
+        
+        // data[i].profile_Stars!=RatingValue ||
+        // data[i].profile_profile_Tutor_Price!=PriceValue 
+        ){data.splice(i,1)};
+    };  
+    console.log(data);
+    
+}
