@@ -6,14 +6,19 @@
 	<title>PortTutor Homepage</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="slider.css">
-	<link rel="stylesheet" href="menu.css">
-	<link rel="stylesheet" href="testimonials.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/testimonials.css">
+	<style>
+	.para p, .grid-item a {
+		color:#4d656f!important;
+	}
+	</style>
 </head>
 <header class="header">
 		<div class="mainlogo">
-			<a href="index.html"><img src="Images/logo.png" alt="logo"></a>
+			<a href="index.html"><img src="./img/logo.png" alt="logo"></a>
 		</div>
   <div class="burger">
     <div class="burger__patty"></div>
@@ -22,7 +27,7 @@
   </div>
   <nav class="menu">
     <div class="menu__brand">
-      <a href="index.html"><div class="logo"><img src="Images/logo.png" alt="logo"></div></a>
+      <a href="index.html"><div class="logo"><img src="./img/logo.png" alt="logo"></div></a>
     </div>
     <ul class="menu__list">
       <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
@@ -36,8 +41,8 @@
 <body>
 	<div id="slideshow">
 		<div id="slides">
-			<img src="Images/img1.jpg">
-			<img src="Images/img2.jpg">
+			<img src="./img/img1.jpg">
+			<img src="./img/img2.jpg">
 		</div>
 		<h2 class="slidetext">Distinction is only one click away.</h2>
 	</div>
@@ -65,14 +70,13 @@
 		</div>
 	</div>
 	<div class="h1">Browse By Subject</div>
-
 	<div class="grid-container">
 		<button class="grid-item"><a href="tutorsearch.html?sub=Academic"> Academic </a></button>
 		<button class="grid-item"><a href="tutorsearch.html?sub=Languages"> Languages </a></button>
 		<button class="grid-item"><a href="tutorsearch.html?sub=Music"> Music </a></button>
 		<button class="grid-item"><a href="tutorsearch.html?sub=Art"> Art </a></button>
 		<button class="grid-item"><a href="tutorsearch.html?sub=Health"> Health</a></button>
-		<button class="grid-item"><a href="tutorsearch.html?sub=IT">IT</a></button>
+		<button class="grid-item"><a href="tutorsearch.html?sub=IT"> IT</a></button>
 	</div>
 	<br><br><br>
 	<div class="testimonial-container">
@@ -82,9 +86,9 @@
 			<ul class="cd-testimonials">
 				<li>
 					<div class="testimonial-content">
-						<p>" I was able to get a distinction with PorTutor, the whole process was easy, fast and very convenient. I totally recommend it."</p>
+						<p>" I was able to get a distinction with PorTutor, the whole process was easy, fast and very convenient. I totally recommend it. "</p>
 						<div class="cd-author">
-							<img src="Images/student.jpg" alt="Author image">
+							<img src="./img/student.jpg" alt="Author image">
 							<ul class="cd-author-info">
 								<li>Sarah<strong> Simpson</strong><br><span>First Year Student</span></li>
 								<li></li>
@@ -94,9 +98,9 @@
 				</li>
 				<li>
 					<div class="testimonial-content">
-						<p>" After months of looking for affordable tutors, PorTutor was my key to finding the best tutors in town in one place."</p>
+						<p>" After months of looking for affordable tutors, PorTutor was my key to finding the best tutors in town in one place. "</p>
 						<div class="cd-author">
-							<img src="Images/student.jpg" alt="Author image">
+							<img src="./img/student.jpg" alt="Author image">
 							<ul class="cd-author-info">
 								<li>Maria<strong> Collins</strong><br><span>Third Year Student</span></li>
 								<li></li>
@@ -110,9 +114,9 @@
 </div>
 <br><br><br>
 </body>
-<script src='jquery.min.js'></script>
-<script src="script.js"></script>
-<script src="slider.js"></script>
+<script src='js/jquery.min.js'></script>
+<script src="js/script.js"></script>
+<script src="js/slider.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/jquery.flexslider.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.0/masonry.pkgd.min.js'></script>
