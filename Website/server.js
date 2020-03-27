@@ -73,6 +73,12 @@ app.post('/SearchForTutor', (req, res) => {
   console.log("Hi");
 });
 
+app.post('/LoginUser' , (req, res) => {
+  console.log('Got Body: ', req.body);
+  res.sendStatus(200);
+  console.log(req.body);
+})
+
 // profileDb.insert({
 //   profile_ID:"XXXXXXXX",
 //   profile_Name:"John",
