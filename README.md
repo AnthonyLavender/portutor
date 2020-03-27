@@ -1,7 +1,7 @@
 # PorTutor
 
-###Getting ready!
-
+### Getting ready! 
+* __Make sure you have node.js and npm__
 * Fist clone this repository 
 * Next open in command line or bash 
 * Do npm install
