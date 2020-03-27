@@ -100,11 +100,11 @@ app.get('/getProfileBookingData',(req,res)=>{
       });
 });
 
-app.post('/tutorresults', (req,res)=>{
+app.get('/tutorresults', (req,res)=>{
   res.sendFile(__dirname + '/tutorresults.html');
 });
 
-app.post('/logIn', (req,res)=>{
+app.get('/logIn', (req,res)=>{
   res.sendFile(__dirname + '/studentprofile.html');
 });
 
