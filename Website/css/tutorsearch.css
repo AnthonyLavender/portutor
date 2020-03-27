@@ -1,3 +1,4 @@
+/* This will change the llok of the whole form */
 .tutorsearch-form {
   font-family: "Roboto", sans-serif;
   width:650px;
@@ -6,13 +7,13 @@
   background:linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
   border-radius: 10px;
 }
-
+/* Change the look of the header inside the form  */
 .form-header  {
   background-color: #37556b;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
+/* Change the h1 tag inside form */
 .form-header h1 {
   font-size: 30px;
   text-align:center;
@@ -20,7 +21,7 @@
   padding:20px 0;
   border-bottom:1px solid #cccccc;
 }
-
+/* Changes the body inside the form  */
 .form-body {
   padding:10px 40px;
   color:#666;

@@ -1,54 +1,55 @@
+/* This will change everything instide the html and body tags */
 html, body {
   margin:0;border:0;padding:0;
   font-size:16px;
   background-color: #222f38;
   position:relative!important;
 }
-
+/* This will change the size of all the H tags  */
 h1 {font-size:40px;}
 h2 {font-size:36px; padding-bottom: 14px;}
 h3 {font-size:30px;}
 h4 {font-size:24px;}
 h5 {font-size:20px;}
 h6 {font-size:18px;}
-
+/* This will make thing bold */
 .bold {
 	font-weight: bold;
 }
-
+/* This will push things to the front */
 .tofront {
   z-index: -1;
   position:absolute!important;
   padding-left:100px;
 }
-
+/* Adds a border  */
 .tm-border {
 	border: 5px solid #fff;
 	box-shadow: 2px 2px #000;
 }
-
+/* Add shadows to items  */
 .shadow {
 	text-shadow: 1px 1px #000;
 }
-
+/* Changes colour of the title */
 .tm-title {
 	color: #66CCFF;
 }
-
+/* makes writing white  */
 .white {
   color: #fff;
 }
-
+/* Changes the boxes padding  */
 .about,.skills,
 .education,.pricing{
   padding: 40px;
   min-height: 330px;
 }
-
+/* Adds a margin to the boxes  */
 .education, .pricing {
   margin-top: 30px;
 }
-
+/* Changes what in the top section  */
 .topsection {
   text-align: center;
   min-height: 400px;
@@ -57,35 +58,35 @@ h6 {font-size:18px;}
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
+/* Changes the image in the topsection  */
 .topsection img {
   display: inline-block !important;
 }
-
+/* Changes the tite in the top section */
 .topsection h2 {
   padding-top: 40px;
 }
-
+/* Changes the colour of the hr in the top section  */
 .topsection hr {
   border-color: #3366CC;
   width: 100px;
 }
-
+/* Changes the look of the about container  */
 .about {
   background: #fff;
   box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
 }
-
+/* Changes the look of the skill container  */
 .skills {
   background: #3366CC;
   color: #f5f5f5;
 }
-
+/* Changes the look of progession bars inside the skills container  */
 .skills .progress {
   border-radius: 0px;
   height: 4px;
 }
-
+/* Changes the colour of the progession bar  */
 .skills .progress .progress-bar-primary {
   background: #204090;
 }
@@ -95,7 +96,7 @@ h6 {font-size:18px;}
   font-weight: normal;
   padding-bottom: 6px;
 }
-
+/* Changes the education conatiner */
 .education {
   background: #3366CC;
   color: #f5f5f5;
